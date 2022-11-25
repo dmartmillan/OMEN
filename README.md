@@ -1,5 +1,8 @@
 # OMEN: Network-based Driver Gene Identification using Mutual Exclusivity (1.0.0)
 
+## Design project version
+### UGent course: C003698A - Design Project
+
 ## Requirements
 
 Linux (tested on Ubuntu 18.04)
