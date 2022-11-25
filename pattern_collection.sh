@@ -14,7 +14,7 @@ parameterFiles=($(swipl -g "generate_experiment(Experiment_File), write(Experime
 parts="$1"
 
 # the archival directory storing the output and the experiment file
-archivedir=output
+archivedir="$4"
 
 # NOTE that originally experiment_generator.pl generated multiple experiments at once,
 # hence the iteration here. In the last version, we've assumed only 1 set of parameters
@@ -48,18 +48,16 @@ do
     swipl -g "consult(experiment_merger), merge(${split_output_files_list}, new_final_output_file), halt"
     #yap -z "consult(experiment_merger), merge(${split_output_files_list}), halt" > new_final_output_file
   
-    # generate a random directory to write the output in
-    unique_directory=$(head -c 500 /dev/urandom | LC_ALL=C tr -dc 'a-zA-Z0-9' | fold -w 20 | head -n 1)
-    mkdir -p $archivedir/$unique_directory
+    # generate a directory to write the output in
+    mkdir -p $archivedir
 
     cp $element "$2"
     cp new_final_output_file "$3"
     
-    mv new_final_output_file $archivedir/${unique_directory}/output
-    mv $element $archivedir/${unique_directory}/
+    mv new_final_output_file $archivedir
+    mv $element $archivedir
 
     # clean the working directory
-    ##mkdir ${unique_directory}
     for split_file in  ${element}.split+([0-9]);
     do
       	##echo 'not removing file'

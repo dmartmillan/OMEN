@@ -14,7 +14,7 @@
 :- multifile experiment_query/1.
 :- multifile '-'/2.
 
-%:- set_prolog_stack(global, limit(30 000 000 000)).
+:- set_prolog_stack(global, limit(30 000 000 000)).
 :- set_prolog_flag(stack_limit, 30000000000).
 
 % assume that the files that have to be merged were passed to yap, and their data is in the kb.

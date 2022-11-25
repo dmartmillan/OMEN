@@ -1,6 +1,11 @@
-%:- set_prolog_stack(global, limit(220 000 000 000)).
-%:- set_prolog_stack(trail,  limit(50*10**9)).
-%:- set_prolog_stack(local,  limit(50*10**9)).
+
+% Big numbers for all the stack limits (Wout, Design project)
+:- set_prolog_stack(global, limit(220 000 000 000)).
+
+:- set_prolog_stack(trail,  limit(50*10**9)).
+:- set_prolog_stack(local,  limit(50*10**9)).
+
+
 :- set_prolog_flag(stack_limit, 30000000000).
 
 :- use_module(library(apply)).
@@ -16,6 +21,7 @@ go(Experiment_File, File) :-
     mcda(Type, [Alpha, Beta]),
     consult_background(Gene_Patient_Probability_File, Gene_Frequency_File),
     apply_threshold(mcda(Type, [alpha(Alpha), beta(Beta)]), File).
+    
 
 consult_background(Gene_Patient_Probability_File, Gene_Frequency_File) :-
     consult(Gene_Patient_Probability_File),

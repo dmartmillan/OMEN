@@ -1,6 +1,8 @@
+
 import argparse
 import subprocess
 import sys
+import datetime
 
 #
 # A straightforward interface to interacting with OMEN. By default all parameters have been set to repeat the original experiment
@@ -32,13 +34,15 @@ parser.add_argument("-threshold_probability", nargs='?', type=str, help="math ex
 parser.add_argument("-alpha", type=float, nargs='?', help="value between 0 and 1 managing trade-off between the mutex term and the gene_freq term", default=0.8)
 parser.add_argument("-path_definition_file", type=str, nargs='?', help="file specifying the path distribution", default='example_data/path_definition.dslp')
 
-parser.add_argument("-cores", type=str, nargs='?', help="number of CPU threads to employ", default=7)
+parser.add_argument("-cores", type=str, nargs='?', help="number of CPU threads to employ", default=10)
 
 args = parser.parse_args()
 original_stdout = sys.stdout
 
+outdir = "output/" + datetime.datetime.now().strftime("%d_%m_%Y.%H_%M_%s")
 
 # GENERATE PARAMETERS FILE FOR PATTERN COLLECTION 
+print("GENERATE PARAMETERS FILE FOR PATTERN COLLECTION step")
 with open('experiment_parameters.pl', 'w') as f:
     sys.stdout = f
     print("data('{}', '{}').".format(args.cadd_file, args.coverage_file))
@@ -49,15 +53,32 @@ with open('experiment_parameters.pl', 'w') as f:
     print("path_definition_file('{}').".format(args.path_definition_file))
     sys.stdout = original_stdout
 
+# Only run a step if necessary because can take a lot of time (Design Project)
 
 # PERFORM PATTERN COLLECTION
-subprocess.call(['./pattern_collection.sh', str(args.cores), 'experiment_file_1', 'output_file_1'])
+print("PATTERN COLLECTION step")
+subprocess.call(['./pattern_collection.sh', str(args.cores), outdir + "/experiment_file_1", outdir + "/output_file_1", outdir])
+
 # EVALUATE PATHS
-subprocess.call(['./evaluate_paths.sh', 'experiment_file_1', 'output_file_1'])
+print("EVALUATE PATHS step")
+subprocess.call(['./evaluate_paths.sh', outdir + "/experiment_file_1", outdir + "/output_file_1"])
+
 # FILTER PATTERNS
-subprocess.call(['./filter_patterns.sh', 'output_file_1.evaluated', str(args.pattern_quality_threshold)])
+print("FILTER PATTERNS step")
+subprocess.call(['./filter_patterns.sh', outdir + "/output_file_1.evaluated", str(args.pattern_quality_threshold)])
+
 # GENERATE PROBABILISTIC NETWORK
-subprocess.call(['./probabilistic_network.sh', 'output_file_1.evaluated.filtered_' + str(args.pattern_quality_threshold)])
+print("GENERATE PROBABILISTIC NETWORK step")
+subprocess.call(['./probabilistic_network.sh', outdir + "/output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold)])
+
 # GENERATE RANKING
-subprocess.call(['./ranking.sh', 'output_file_1.evaluated.filtered_' + str(args.pattern_quality_threshold) + '.probabilistic_network', args.network_file])
+print("GENERATE RANKING step")
+subprocess.call(['./ranking.sh', outdir + "/output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold) + '.probabilistic_network', args.network_file])
+
+# Add a new subprocess (Design Project)
+# CLUSTERING N=100
+print("CLUSTERING step")
+subprocess.call(['./generate_clustering_data.sh', "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold),'100', outdir])
+
+
 
