@@ -49,7 +49,7 @@ do
     #yap -z "consult(experiment_merger), merge(${split_output_files_list}), halt" > new_final_output_file
   
     # generate a directory to write the output in
-    mkdir -p $archivedir
+    # mkdir -p $archivedir
 
     cp $element "$2"
     cp new_final_output_file "$3"
