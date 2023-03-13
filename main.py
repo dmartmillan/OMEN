@@ -5,6 +5,7 @@ import sys
 import datetime
 import os
 import shutil
+from filter_genes import filter_genes_output
 
 #
 # A straightforward interface to interacting with OMEN. By default all parameters have been set to repeat the original experiment
@@ -41,7 +42,7 @@ parser.add_argument("-cores", type=str, nargs='?', help="number of CPU threads t
 
 parser.add_argument("-step", type=int, nargs='?', help="step to execute OMEN", default=0)
 parser.add_argument("-outlast", type=str, nargs='?', help="output folder where continue OMEN run")
-
+parser.add_argument("-filter", type=str, nargs='+', help="filter specific genes")
 
 args = parser.parse_args()
 original_stdout = sys.stdout
@@ -49,6 +50,7 @@ original_stdout = sys.stdout
 outdir = "output/" + datetime.datetime.now().strftime("%d_%m_%Y.%H_%M_%s")
 outlast = str(args.outlast)
 step = args.step
+filter_genes = args.filter
 
 os.mkdir(outdir)
 
@@ -111,17 +113,25 @@ else:
     shutil.copy(outlast + "/output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold) + '.probabilistic_network.desc', outdir + "/output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold) + '.probabilistic_network.desc')
 
 
-
 # We added a new subprocess (Design Project)
 # New dataset --> change paths to CADD and network file manually in the generate_clustering_data.sh
 
 # STEP 6
 # CLUSTERING 
 print("STEP 6: CLUSTERING step")
-N = [50,80,100,120,150,200]
+# N = [50,80,100,120,150,200]
+N = [100]
 if (step <= 6):
+
+    print(filter_genes)
+
+    # Filter out some genes
+    if filter_genes is not None:
+        filter_genes_output(filter_genes, "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold), outdir)
+
     subprocess.call(['./generate_file_to_keep_counts_of_links_in_function_of_N.sh',outdir])
     for n in N:
         subprocess.call(['./generate_clustering_data.sh', "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold),str(n),outdir])
+
 else:
     shutil.copytree(outlast + "/links_vs_N", outdir + "/links_vs_N")
