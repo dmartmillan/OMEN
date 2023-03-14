@@ -24,7 +24,7 @@ Networks:
 - Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lenghts)
 
 With default network nº 1 (with corrected gene lenght):
-- Alpha 0 - all
+- [ ] Alpha 0 - all
 - Alpha 0.2 - all
 - Alpha 0.5 - all
 - Alpha 0.65 - all
