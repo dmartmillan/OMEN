@@ -22,6 +22,8 @@ Networks:
 
 ## Runs
 - Default prostate cancer run: alpha 0.8, threshold 0.67
+
+With default network nº 1:
 - Alpha 0 - all
 - Alpha 0.2 - all
 - Alpha 0.5 - all
@@ -43,3 +45,8 @@ Networks:
 - Alpha 0.8 - non-agressive
 - Alpha 0.9 - non-agressive
 - Alpha 1 - non-agressive
+
+With network nº 8:
+- Alpha 0.65 - all
+- Alpha 0.65 - agressive 
+- Alpha 0.65 - non-agressive 
