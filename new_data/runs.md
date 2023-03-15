@@ -21,9 +21,9 @@ Networks:
 -’network8.pl’ → network8
 
 ## Runs
-- Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lenghts)
+- Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lengths)
 
-With default network nº 1 (with corrected gene lenght):
+With default network nº 1 (with corrected gene length):
 - [ ] Alpha 0 - all
 - [ ] Alpha 0.2 - all
 - [ ] Alpha 0.5 - all
@@ -46,7 +46,7 @@ With default network nº 1 (with corrected gene lenght):
 - [ ] Alpha 0.9 - non-agressive
 - [ ] Alpha 1 - non-agressive
 
-With network nº 8 (with the corrected gene  lenght):
+With network nº 8 (with the corrected gene length):
 - [ ] Alpha 0.65 - all
 - [ ] Alpha 0.65 - agressive 
 - [ ] Alpha 0.65 - non-agressive 
