@@ -17,8 +17,8 @@ Coverage:
 - ‘coverage_corrected_non_aggr.pl’ → mutation frequencies corrected and only non-aggresive
 
 Networks:
--’network.pl’ → network1
--’network8.pl’ → network8
+- ’network.pl’ → network1
+- ’network8.pl’ → network8
 
 ## Runs
 - Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lengths)
