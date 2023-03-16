@@ -25,28 +25,100 @@ Networks:
 
 With default network nº 1 (with corrected gene length):
 - [ ] Alpha 0 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0 &> outputfile_all_corrected_0.0 2>&1&
+```
 - [ ] Alpha 0.2 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.2 &> outputfile_all_corrected_0.2 2>&1&
+```
 - [ ] Alpha 0.5 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.5 &> outputfile_all_corrected_0.5 2>&1&
+```
 - [ ] Alpha 0.65 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.65 &> outputfile_all_corrected_0.65 2>&1&
+```
 - [ ] Alpha 0.8 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.8 &> outputfile_all_corrected_0.8 2>&1&
+```
 - [ ] Alpha 0.9 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.9 &> outputfile_all_corrected_0.9 2>&1&
+```
 - [ ] Alpha 1 - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 1 &> outputfile_all_corrected_1 2>&1&
+```
 - [ ] Alpha 0 - agressive 
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0 &> outputfile_aggr_corrected_0.0 2>&1&
+```
 - [ ] Alpha 0.2 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.2 &> outputfile_aggr_corrected_0.2 2>&1&
+```
 - [ ] Alpha 0.5 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.5 &> outputfile_aggr_corrected_0.5 2>&1&
+```
 - [ ] Alpha 0.65 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_corrected_0.65 2>&1&
+```
 - [ ] Alpha 0.8 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.8 &> outputfile_aggr_corrected_0.8 2>&1&
+```
 - [ ] Alpha 0.9 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_aggr_corrected_0.9 2>&1&
+```
 - [ ] Alpha 1 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 1 &> outputfile_aggr_corrected_1 2>&1&
+```
 - [ ] Alpha 0 - non-agressive 
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0 &> outputfile_nonaggr_corrected_0.0 2>&1&
+```
 - [ ] Alpha 0.2 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.2 &> outputfile_nonaggr_corrected_0.2 2>&1&
+```
 - [ ] Alpha 0.5 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.5 &> outputfile_nonaggr_corrected_0.5 2>&1&
+```
 - [ ] Alpha 0.65 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_nonaggr_corrected_0.65 2>&1&
+```
 - [ ] Alpha 0.8 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.8 &> outputfile_nonaggr_corrected_0.8 2>&1&
+```
 - [ ] Alpha 0.9 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_nonaggr_corrected_0.9 2>&1&
+```
 - [ ] Alpha 1 - non-agressive
-
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_nonaggr_corrected_0.9 2>&1&
+```
 With network nº 8 (with the corrected gene length):
 - [ ] Alpha 0.65 - all
-- [ ] Alpha 0.65 - agressive 
-- [ ] Alpha 0.65 - non-agressive 
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network8.pl -alpha 0.65 &> outputfile_all_net8_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_aggr_net8_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_nonaggr_net8_0.65 2>&1&
+```
+
