@@ -24,11 +24,11 @@ Networks:
 - Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lengths)
 
 With default network nº 1 (with corrected gene length):
-- [ ] Alpha 0 - all
+- [X] Alpha 0 - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0 &> outputfile_all_corrected_0.0 2>&1&
 ```
-- [ ] Alpha 0.2 - all
+- [X] Alpha 0.2 - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.2 &> outputfile_all_corrected_0.2 2>&1&
 ```
