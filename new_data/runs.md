@@ -32,23 +32,23 @@ nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/ne
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.2 &> outputfile_all_corrected_0.2 2>&1&
 ```
-- [ ] Alpha 0.5 - all
+- [X] Alpha 0.5 - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.5 &> outputfile_all_corrected_0.5 2>&1&
 ```
-- [ ] Alpha 0.65 - all
+- [X] Alpha 0.65 - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.65 &> outputfile_all_corrected_0.65 2>&1&
 ```
-- [ ] Alpha 0.8 - all
+- [X] Alpha 0.8 - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.8 &> outputfile_all_corrected_0.8 2>&1&
 ```
-- [ ] Alpha 0.9 - all
+- [ ] Alpha 0.9 - all - ERROR?
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.9 &> outputfile_all_corrected_0.9 2>&1&
 ```
-- [ ] Alpha 1 - all
+- [ ] Alpha 1 - all - ERROR?
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 1 &> outputfile_all_corrected_1 2>&1&
 ```
