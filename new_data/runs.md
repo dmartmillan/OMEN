@@ -106,7 +106,7 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_a
 ```
 - [ ] Alpha 1 - non-agressive
 ```ssh
-nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_nonaggr_corrected_0.9 2>&1&
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 1 &> outputfile_nonaggr_corrected_1 2>&1&
 ```
 With network nº 8 (with the corrected gene length):
 - [ ] Alpha 0.65 - all
