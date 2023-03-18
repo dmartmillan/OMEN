@@ -52,15 +52,15 @@ nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/ne
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 1 &> outputfile_all_corrected_1 2>&1&
 ```
-- [ ] Alpha 0 - agressive 
+- [X] Alpha 0 - agressive 
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0 &> outputfile_aggr_corrected_0.0 2>&1&
 ```
-- [ ] Alpha 0.2 - agressive
+- [X] Alpha 0.2 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.2 &> outputfile_aggr_corrected_0.2 2>&1&
 ```
-- [ ] Alpha 0.5 - agressive
+- [X] Alpha 0.5 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.5 &> outputfile_aggr_corrected_0.5 2>&1&
 ```
@@ -68,7 +68,7 @@ nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl n
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_corrected_0.65 2>&1&
 ```
-- [ ] Alpha 0.8 - agressive
+- [X] Alpha 0.8 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.8 &> outputfile_aggr_corrected_0.8 2>&1&
 ```
@@ -76,7 +76,7 @@ nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl n
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_aggr_corrected_0.9 2>&1&
 ```
-- [ ] Alpha 1 - agressive
+- [X] Alpha 1 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 1 &> outputfile_aggr_corrected_1 2>&1&
 ```
