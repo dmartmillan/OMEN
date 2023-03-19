@@ -44,11 +44,11 @@ nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/ne
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.8 &> outputfile_all_corrected_0.8 2>&1&
 ```
-- [ ] Alpha 0.9 - all - ERROR?
+- [X] Alpha 0.9 - all 
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.9 &> outputfile_all_corrected_0.9 2>&1&
 ```
-- [ ] Alpha 1 - all - ERROR?
+- [ ] Alpha 1 - all 
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 1 &> outputfile_all_corrected_1 2>&1&
 ```
@@ -72,7 +72,7 @@ nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl n
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.8 &> outputfile_aggr_corrected_0.8 2>&1&
 ```
-- [ ] Alpha 0.9 - agressive
+- [X] Alpha 0.9 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network.pl -alpha 0.9 &> outputfile_aggr_corrected_0.9 2>&1&
 ```
@@ -113,7 +113,7 @@ With network nº 8 (with the corrected gene length):
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network8.pl -alpha 0.65 &> outputfile_all_net8_0.65 2>&1&
 ```
-- [ ] Alpha 0.65 - agressive
+- [X] Alpha 0.65 - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_aggr_net8_0.65 2>&1&
 ```
