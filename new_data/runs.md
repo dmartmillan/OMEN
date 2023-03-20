@@ -122,3 +122,8 @@ nohup python main.py new_data/CADD_aggr.pl new_data/coverage_corrected_aggr.pl n
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_nonaggr_net8_0.65 2>&1&
 ```
 
+## Plots
+Scripts:
+- Compare_rankings.ipynb
+- differences_in_gene_ranking.ipynb
+
