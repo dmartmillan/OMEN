@@ -96,7 +96,7 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_a
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_nonaggr_corrected_0.65 2>&1&
 ```
-- [ ] Alpha 0.8 - non-agressive
+- [X] Alpha 0.8 - non-agressive
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_corrected_non_aggr.pl new_data/network.pl -alpha 0.8 &> outputfile_nonaggr_corrected_0.8 2>&1&
 ```
