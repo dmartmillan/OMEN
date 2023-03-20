@@ -48,7 +48,7 @@ nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/ne
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 0.9 &> outputfile_all_corrected_0.9 2>&1&
 ```
-- [ ] Alpha 1 - all 
+- [X] Alpha 1 - all 
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage_corrected.pl new_data/network.pl -alpha 1 &> outputfile_all_corrected_1 2>&1&
 ```
