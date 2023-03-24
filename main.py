@@ -68,6 +68,8 @@ with open('experiment_parameters.pl', 'w') as f:
 
 # Only run a step if necessary because can take a lot of time (Design Project)
 
+print(step, outdir)
+
 # STEP 1
 # PERFORM PATTERN COLLECTION
 print("STEP 1: PATTERN COLLECTION step")
@@ -119,11 +121,8 @@ else:
 # STEP 6
 # CLUSTERING 
 print("STEP 6: CLUSTERING step")
-# N = [50,80,100,120,150,200]
-N = [100]
+N = [50,80,100,120,150,200]
 if (step <= 6):
-
-    print(filter_genes)
 
     # Filter out some genes
     if filter_genes is not None:
