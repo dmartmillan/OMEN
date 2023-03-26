@@ -816,3 +816,12 @@ Generating graph file, cannot links file, and must links file.
 Generating graph file, cannot links file, and must links file.
 Generating graph file, cannot links file, and must links file.
 Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+GENERATE PARAMETERS FILE FOR PATTERN COLLECTION step
+0 output/24_03_2023.13_55_1679662553
+STEP 1: PATTERN COLLECTION step
+STEP 2: EVALUATE PATHS step
+STEP 3: FILTER PATTERNS step
+STEP 4: GENERATE PROBABILISTIC NETWORK step
+STEP 5: GENERATE RANKING step
+STEP 6: CLUSTERING step

@@ -662,6 +662,7 @@ let focus = (event, d) => {
                 const opacity = (1 + d.max_cost) / 8;
             }
             else {const opacity = 0;}
+        let opacity;
         return compare(d.source) && compare(d.target)
             ? opacity
             : 0.1;
