@@ -1,0 +1,4 @@
+Rank	Gene	Genomic Alterations	Locus	Altered frequency (The Cancer Genome Atlas Research Network 2015)	Biological function in prostate cancer	References
+1	MYC	Amplification	8q24.21	8.0%	Contributes to prostate cancer by directly activating the transcription of protumorigenic factors involved in cell growth and proliferation	Jenkins et al. 1997; Ellwood-Yen et al. 2003
+2	TP53	Deletion/mutation	17p13.1	8.0%	Responds to diverse cellular stresses to regulate expression of genes involved in cell cycle arrest, apoptosis, senescence, DNA repair, or changes in metabolism	Barbieri et al. 2012; Beltran et al. 2016b; Mu et al. 2017
+10	FOXA1	Mutation	14q21.1	6.0%	Required for epithelial cell differentiation in murine prostate and promotes cell cycle progression in CRPC	Zhang et al. 2011a; Barbieri et al. 2012
