@@ -3,19 +3,28 @@ import os
 import sys
 import matplotlib.pyplot as plt
 
-df2 = pd.read_csv(os.path.join(sys.path[0],'TCGA_prad_maf.csv'),sep=',') #Has all the genes
+df = pd.read_csv(os.path.join(sys.path[0],'TCGA_PRAD_CADD.csv'),skiprows=1,sep='\t')
+df["key"] = "chr" + df["#Chrom"].astype(str) + ";" + df["Pos"].astype(str) + ";" + df["Ref"] + ";" + df["Alt"]
+dfCADD = df[['#Chrom','Pos','Ref','Alt','key','PHRED']]
+dfCADD_2 = dfCADD[['key','PHRED']]
+dfCADD_3 = dfCADD_2.set_index('key')
+dfCADD_4 = dfCADD_3.T
+D = dfCADD_4.to_dict()
 
+df2 = pd.read_csv(os.path.join(sys.path[0],'TCGA_prad_maf.csv'),sep=',') #Has all the genes
 dfMAF = df2[['Hugo_Symbol','Chromosome','Start_Position','Reference_Allele','Allele','Tumor_Sample_Barcode']]
 dfMAF["key"] = dfMAF["Chromosome"] + ";" + dfMAF["Start_Position"].astype(str) + ";" + dfMAF["Reference_Allele"] + ";" + dfMAF["Allele"]
 dfMAF["patient"] = dfMAF["Tumor_Sample_Barcode"].str.slice(0,12)#Equivalent to "case_submitter_id" column on the clinical data
 
+
 genes = {}
-#Counts the number of times a gene is present
+#Counts the number of times a gene is present if there is on the CADD score file
 for i in dfMAF.index:
-    if dfMAF._get_value(i,'Hugo_Symbol') in genes:
-        genes[dfMAF._get_value(i,'Hugo_Symbol')] = genes[dfMAF._get_value(i,'Hugo_Symbol')] + 1
-    else:
-        genes[dfMAF._get_value(i,'Hugo_Symbol')] = 1
+    if dfMAF._get_value(i,'key') in D:
+        if dfMAF._get_value(i,'Hugo_Symbol') in genes:
+            genes[dfMAF._get_value(i,'Hugo_Symbol')] = genes[dfMAF._get_value(i,'Hugo_Symbol')] + 1
+        else:
+            genes[dfMAF._get_value(i,'Hugo_Symbol')] = 1
 
 genes_df = pd.DataFrame.from_dict(genes, orient='index')
 
@@ -66,7 +75,7 @@ plt.title("Corrected Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,genes_df.iloc[i]["Corrected"],round(genes_df.iloc[i]["Corrected"],3), ha = 'center')
+    plt.text(i,genes_df.iloc[i]["Corrected"],round(genes_df.iloc[i]["Corrected"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "Corrected Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #Plots of the NOT CORRECTED mutation freq
@@ -78,7 +87,7 @@ plt.title("Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,genes_df.iloc[i]["MutationFreq%"],round(genes_df.iloc[i]["MutationFreq%"],3), ha = 'center')
+    plt.text(i,genes_df.iloc[i]["MutationFreq%"],round(genes_df.iloc[i]["MutationFreq%"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #### Step 2 Keep only the genes on the network ###
@@ -100,7 +109,7 @@ plt.title("Net1 Corrected Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,net1genes_df.iloc[i]["Corrected"],round(net1genes_df.iloc[i]["Corrected"],3), ha = 'center')
+    plt.text(i,net1genes_df.iloc[i]["Corrected"],round(net1genes_df.iloc[i]["Corrected"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "net1_Corrected Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #Plots of the NOT CORRECTED mutation freq
@@ -112,7 +121,7 @@ plt.title("Net1 Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,net1genes_df.iloc[i]["MutationFreq%"],round(net1genes_df.iloc[i]["MutationFreq%"],3), ha = 'center')
+    plt.text(i,net1genes_df.iloc[i]["MutationFreq%"],round(net1genes_df.iloc[i]["MutationFreq%"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "net1_Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #For net8
@@ -135,7 +144,7 @@ plt.title("Net8 Corrected Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,net8genes_df.iloc[i]["Corrected"],round(net8genes_df.iloc[i]["Corrected"],3), ha = 'center')
+    plt.text(i,net8genes_df.iloc[i]["Corrected"],round(net8genes_df.iloc[i]["Corrected"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "net8_Corrected Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #Plots of the NOT CORRECTED mutation freq
@@ -148,7 +157,7 @@ plt.title("Net8 Mutation Freq")
 plt.xticks(rotation=16,fontsize=8) # Correct overlapping labels and size
 
 for i in range(10): #To add the values to the bars
-    plt.text(i,net8genes_df.iloc[i]["MutationFreq%"],round(net8genes_df.iloc[i]["MutationFreq%"],3), ha = 'center')
+    plt.text(i,net8genes_df.iloc[i]["MutationFreq%"],round(net8genes_df.iloc[i]["MutationFreq%"],5), ha = 'center')
 plt.savefig(os.path.join(sys.path[0], "net8_Mutation Freq"+".png"),format="png") #Save plot, always above .show !!! Are saved in user
 
 #### Step 3: Compare the aggresive with the not aggresive ###
