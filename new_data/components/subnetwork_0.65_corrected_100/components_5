@@ -1,0 +1,6 @@
+Component1: {'STAT3', 'MYC', 'STAT1', 'ZNF263', 'STAT2', 'TP53', 'TCF12', 'EGR1', 'REST', 'EP300'}
+Component2: {'ESR1', 'GNAI2', 'ITGB2', 'FAM20C', 'GNB1', 'GNAI1', 'ITGAM', 'C3', 'FAM20A'}
+Component3: {'RHOC', 'RAC1', 'RHOB'}
+Component4: {'SP1', 'SP3'}
+Component5: {'E2F1', 'ELF1'}
+Component6: {'KCNAB1', 'KCNAB3', 'KCNAB2'}

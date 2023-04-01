@@ -1,0 +1,12 @@
+Component1: {'IGF2', 'FOS', 'SP3', 'SP1', 'BCAN', 'DCN', 'EP300', 'MBD1', 'CTCF', 'CEBPA', 'FOXA1', 'PGR', 'JUN', 'ETS1'}
+Component2: {'NR2C2', 'TP53', 'E2F1', 'TFDP1'}
+Component3: {'ZNF318', 'ZNF644', 'NOTCH1', 'HES1'}
+Component4: {'RAC1', 'RHOA', 'RAC3'}
+Component5: {'BRF2', 'E2F4', 'ZBTB11', 'HMGN3', 'MYNN', 'PIGQ'}
+Component6: {'CEBPZ', 'TDRKH', 'CBX2', 'SNAPC4'}
+Component7: {'CREB3', 'ZNF24', 'ZNF197'}
+Component8: {'ACTG1', 'MYH6', 'ACTN3'}
+Component9: {'C3', 'ESR1'}
+Component10: {'PSMD6', 'PSMC1'}
+Component11: {'CTNNB1', 'PCDHB8', 'FAT2', 'PCDHB7'}
+Component12: {'HSPG2', 'APOB'}

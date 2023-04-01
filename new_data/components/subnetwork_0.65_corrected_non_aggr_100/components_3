@@ -1,0 +1,3 @@
+Component1: {'SP1', 'TFAP2A', 'CAMK2A', 'ESR1', 'PIK3CA', 'STAT3', 'GNAI1', 'ARRB1', 'EP300', 'USF2', 'SPI1', 'CTBP2', 'GNG2', 'ARRB2', 'STAT1', 'SHC1', 'JUND', 'RAD21', 'TCF12', 'SHH', 'UBA52', 'PEX2', 'CTCF', 'RXRG', 'ZNF263', 'GLI1', 'SUZ12', 'ATM', 'USF1', 'PTEN', 'STAT2', 'EGR1', 'TAF1', 'AKT1', 'RAC1', 'GNAI2', 'PRKCB', 'RHOB', 'SP3', 'RPS27A', 'UBB', 'ACTG1', 'REST', 'FOXA1', 'PRKACA', 'FOS', 'BRCA1', 'RXRA', 'RHOA', 'DLG4', 'E2F1', 'TP53', 'MYC', 'RHOC', 'APOB', 'GNAI3', 'MED1', 'CREB1', 'ACTB', 'SMAD4', 'UBC', 'NFKB1', 'ITGB2', 'AR', 'CTNNB1', 'GNB1', 'C3'}
+Component2: {'KCNAB2', 'KCNAB1', 'KCNAB3'}
+Component3: {'CLCA4', 'CLCA2', 'CLCA1'}

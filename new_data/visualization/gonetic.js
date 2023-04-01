@@ -1,4 +1,4 @@
-const filter = 5
+const filter = 6
 
 class GoNetic {
     constructor() {
@@ -101,7 +101,7 @@ class GoNetic {
         function traverse(node, group, neighbors, nodesById) {
             if ("group" in node) {
                 node.group = Math.min(node.group, group);
-            } else {
+            } else if (neighbors[node.id] !== undefined) {
                 node.group = group;
                 neighbors[node.id].forEach(id => traverse(nodesById[id], group, neighbors, nodesById));
             }
@@ -109,6 +109,7 @@ class GoNetic {
 
         this.nodesById = {};
         this.graph.nodes.forEach(node => this.nodesById[node.id] = node);
+        //console.log(this.neighbors)
         this.graph.nodes.forEach((node, i) => traverse(node, i, this.neighbors, this.nodesById));
         // determine all the groups and assign them an index
         this.groups = {}

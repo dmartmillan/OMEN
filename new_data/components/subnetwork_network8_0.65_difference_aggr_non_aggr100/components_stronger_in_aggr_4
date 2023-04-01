@@ -1,0 +1,5 @@
+Component1: {'ACTN3', 'IRF4', 'PCGF2', 'CDKN1B', 'ZNF644', 'ACTG1', 'DCN', 'CTCF', 'PSMC1', 'MYH6', 'JUN', 'YY1', 'NR2C2', 'GNG2', 'RAC3', 'TP53', 'PGR', 'SP1', 'DVL1', 'AR', 'FOS', 'CEBPB', 'TDRKH', 'CBX2', 'GNB1', 'MBD1', 'EP300', 'CEBPA', 'FOXA1', 'C3', 'ZNF274', 'TFDP1', 'CEBPZ', 'HBP1', 'PSMD6', 'NOTCH1', 'ESR1', 'SP3', 'SNAPC4', 'RAC1', 'RHOA', 'ZNF318', 'BCAN', 'E2F1', 'HES1', 'IGF2', 'ETS1'}
+Component2: {'BRF2', 'E2F4', 'ZBTB11', 'HMGN3', 'MYNN', 'PIGQ'}
+Component3: {'CREB3', 'ZNF24', 'ZNF197'}
+Component4: {'SETDB1', 'HSPG2', 'APOB'}
+Component5: {'CTNNB1', 'PCDHB8', 'FAT2', 'PCDHB7'}

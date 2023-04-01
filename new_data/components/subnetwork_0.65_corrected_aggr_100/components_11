@@ -1,0 +1,10 @@
+Component1: {'NR1D1', 'TGFB1', 'CTCF', 'IRF4', 'HDAC3', 'RING1', 'MYBL2', 'SIRT1', 'MED11', 'MED12', 'EP300', 'SP3', 'E2F1', 'RBL2', 'POLR2B', 'H4C1', 'KMT2D', 'PHC1', 'PSMC1', 'PAX6', 'PKNOX1', 'TP53', 'NFKB1', 'TFDP1', 'SP1'}
+Component2: {'GRK3', 'PRKACA', 'PRKACG', 'GRK2', 'GNG13', 'GNAL', 'RTP1', 'ARRB2', 'PRKACB', 'ARRB1', 'GNB1', 'GNG7'}
+Component3: {'MYH6', 'MYH8', 'MYBPC3', 'TNNT3', 'MYBPC2', 'ACTG1'}
+Component4: {'KRT78', 'ESR1', 'KRT25', 'KRT4', 'PIAS3', 'PGR', 'KRT79', 'KRT6B', 'KRT27'}
+Component5: {'PTPRD', 'PPFIA3'}
+Component6: {'RAC3', 'MAP2K7'}
+Component7: {'PCDHAC2', 'PCDHB8', 'PCDHB7', 'PCDH10'}
+Component8: {'PIGH', 'PIGQ'}
+Component9: {'PI4KB', 'PIP4K2B', 'PI4K2A', 'DVL1', 'OCRL'}
+Component10: {'MOGS', 'PRKCSH'}

@@ -1,0 +1,4 @@
+Component1: {'GNG2', 'GNAI2', 'FAM20C', 'ACTG1', 'TCF4', 'RHOC', 'RAC1', 'GNAI1', 'ESR1', 'STAT3', 'E2F1', 'ZNF263', 'GNAI3', 'TCF12', 'TP53', 'JUND', 'EGR1', 'ITGAM', 'SPI1', 'FAM20A', 'EP300', 'RHOB', 'ITGB2', 'CTCF', 'STAT2', 'DLG4', 'C3', 'ELF1', 'REST', 'FOXA1', 'MYC', 'STAT1', 'PIK3CA', 'AKT1', 'GNB1', 'TAF1', 'ATM'}
+Component2: {'CTBP2', 'CTNNB1'}
+Component3: {'SP1', 'SP3'}
+Component4: {'KCNAB1', 'KCNAB3', 'KCNAB2'}
