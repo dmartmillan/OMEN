@@ -1,0 +1,11 @@
+geneSet	description	link	size	overlap	expect	enrichmentRatio	pValue	FDR	overlapId	userId
+GO:0071867	response to monoamine	http://amigo.geneontology.org/amigo/term/GO:0071867	38	1	0.005132014315618881	194.85526315789474	0.005125602763428105	1	2551	GABPA
+GO:0006383	transcription by RNA polymerase III	http://amigo.geneontology.org/amigo/term/GO:0006383	55	1	0.007427915456816801	134.62727272727273	0.007414371850838153	1	55290	BRF2
+GO:0060359	response to ammonium ion	http://amigo.geneontology.org/amigo/term/GO:0060359	130	1	0.017556891079748803	56.957692307692305	0.017480417587403818	1	2551	GABPA
+GO:0006352	DNA-templated transcription, initiation	http://amigo.geneontology.org/amigo/term/GO:0006352	231	1	0.031197244918630563	32.05411255411256	0.030954964856120815	1	55290	BRF2
+GO:0071824	protein-DNA complex subunit organization	http://amigo.geneontology.org/amigo/term/GO:0071824	242	1	0.032682828009993926	30.597107438016526	0.03241687171777341	1	55290	BRF2
+GO:0001701	in utero embryonic development	http://amigo.geneontology.org/amigo/term/GO:0001701	345	1	0.04659328786548721	21.46231884057971	0.046052090842738425	1	2551	GABPA
+GO:0035690	cellular response to drug	http://amigo.geneontology.org/amigo/term/GO:0035690	349	1	0.04713349989871025	21.216332378223495	0.04657966217704779	1	2551	GABPA
+GO:0030099	myeloid cell differentiation	http://amigo.geneontology.org/amigo/term/GO:0030099	379	1	0.05118509014788305	19.536939313984167	0.05053179584494216	1	2551	GABPA
+GO:1903706	regulation of hemopoiesis	http://amigo.geneontology.org/amigo/term/GO:1903706	389	1	0.05253562023094065	19.03470437017995	0.051847349679562504	1	2551	GABPA
+GO:0002683	negative regulation of immune system process	http://amigo.geneontology.org/amigo/term/GO:0002683	416	1	0.05618205145519617	17.799278846153843	0.05539478945648202	1	2551	GABPA

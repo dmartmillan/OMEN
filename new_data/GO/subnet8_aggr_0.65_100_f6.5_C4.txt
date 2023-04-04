@@ -1,0 +1,11 @@
+geneSet	description	link	size	overlap	expect	enrichmentRatio	pValue	FDR	overlapId	userId
+GO:0006383	transcription by RNA polymerase III	http://amigo.geneontology.org/amigo/term/GO:0006383	55	1	0.018569788642042	53.8509090909091	0.018434836509772845	1	55290	BRF2
+GO:1990823	response to leukemia inhibitory factor	http://amigo.geneontology.org/amigo/term/GO:1990823	95	1	0.032075089472618	31.17684210526316	0.03167041900339862	1	55892	MYNN
+GO:1903509	liposaccharide metabolic process	http://amigo.geneontology.org/amigo/term/GO:1903509	106	1	0.0357890472010264	27.941509433962267	0.03528505643833957	1	9091	PIGQ
+GO:0042157	lipoprotein metabolic process	http://amigo.geneontology.org/amigo/term/GO:0042157	127	1	0.0428793301370788	23.321259842519687	0.04215575151406126	1	9091	PIGQ
+GO:0042770	signal transduction in response to DNA damage	http://amigo.geneontology.org/amigo/term/GO:0042770	131	1	0.0442298602201364	22.609160305343515	0.04346000548355944	1	1874	E2F4
+GO:0031023	microtubule organizing center organization	http://amigo.geneontology.org/amigo/term/GO:0031023	134	1	0.0452427577824296	22.102985074626865	0.04443726327215913	1	1874	E2F4
+GO:0006643	membrane lipid metabolic process	http://amigo.geneontology.org/amigo/term/GO:0006643	202	1	0.0682017691944088	14.662376237623763	0.06637510341266772	1	9091	PIGQ
+GO:0002064	epithelial cell development	http://amigo.geneontology.org/amigo/term/GO:0002064	206	1	0.0695522992774664	14.377669902912624	0.06765290368000965	1	1874	E2F4
+GO:0000075	cell cycle checkpoint	http://amigo.geneontology.org/amigo/term/GO:0000075	216	1	0.07292862448511041	13.712037037037037	0.07084128419874758	1	1874	E2F4
+GO:0072331	signal transduction by p53 class mediator	http://amigo.geneontology.org/amigo/term/GO:0072331	218	1	0.0736038895266392	13.586238532110093	0.07147791228344846	1	1874	E2F4
