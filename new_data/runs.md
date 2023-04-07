@@ -12,6 +12,8 @@ CADD:
 
 Coverage:
 - ‘coverage.pl’ → mutation frequencies not corrected (all prostate cancer)
+- ‘coverage_aggr.pl’ → mutation frequencies not corrected and only aggresive
+- ‘coverage_non_aggr.pl’ → mutation frequencies not corrected and only non-aggresive
 - ‘coverage_corrected.pl’ → mutation frequencies corrected (all prostate cancer)
 - ‘coverage_corrected_aggr.pl’ → mutation frequencies corrected and only aggresive
 - ‘coverage_corrected_non_aggr.pl’ → mutation frequencies corrected and only non-aggresive
@@ -151,3 +153,70 @@ Scripts:
 - Compare_rankings.ipynb
 - differences_in_gene_ranking.ipynb
 
+
+## New runs for non-corrected
+- [ ] Alpha 0 - non-corrected - agressive 
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network.pl -alpha 0 &> outputfile_aggr_0.0 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - agressive 
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_0.65 2>&1&
+```
+- [ ] Alpha 1 - non-corrected - agressive 
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_0.65 2>&1&
+```
+
+- [ ] Alpha 0 - non-corrected - non-agressive 
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network.pl -alpha 0 &> outputfile_nonaggr_0.0 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive 
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_nonaggr_0.65 2>&1&
+```
+- [ ] Alpha 1 - non-corrected - non-agressive 
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network.pl -alpha 1 &> outputfile_nonaggr_1 2>&1&
+```
+
+## New runs for non-corrected in Network8
+- [ ] Alpha 0 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 0.0 &> outputfile_not_all_net8_0.0 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_all_net8_0.65 2>&1&
+```
+- [ ] Alpha 1 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 1 &> outputfile_not_all_net8_1 2>&1&
+```
+
+- [ ] Alpha 0 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network8.pl -alpha 0 &> outputfile_not_aggr_net8_0.0 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_aggr_net8_0.65 2>&1&
+```
+- [ ] Alpha 1 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network8.pl -alpha 1 &> outputfile_not_aggr_net8_1 2>&1&
+```
+
+- [ ] Alpha 0 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 0.0 &> outputfile_not_nonaggr_net8_0.0 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_nonaggr_net8_0.65 2>&1&
+```
+- [ ] Alpha 1 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 1 &> outputfile_not_nonaggr_net8_1 2>&1&
+```
