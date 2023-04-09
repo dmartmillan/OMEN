@@ -163,12 +163,12 @@ nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/ne
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_0.65 2>&1&
 ```
-- [ ] Alpha 1 - non-corrected - agressive 
+- [X] Alpha 1 - non-corrected - agressive 
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_aggr_0.65 2>&1&
 ```
 
-- [ ] Alpha 0 - non-corrected - non-agressive 
+- [X] Alpha 0 - non-corrected - non-agressive 
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network.pl -alpha 0 &> outputfile_nonaggr_0.0 2>&1&
 ```
