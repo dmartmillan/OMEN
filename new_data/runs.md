@@ -182,15 +182,15 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new
 ```
 
 ## New runs for non-corrected in Network8
-- [ ] Alpha 0 - non-corrected - all
+- [X] Alpha 0 - non-corrected - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 0.0 &> outputfile_not_all_net8_0.0 2>&1&
 ```
-- [ ] Alpha 0.65 - non-corrected - all
+- [X] Alpha 0.65 - non-corrected - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_all_net8_0.65 2>&1&
 ```
-- [ ] Alpha 1 - non-corrected - all
+- [X] Alpha 1 - non-corrected - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network8.pl -alpha 1 &> outputfile_not_all_net8_1 2>&1&
 ```
