@@ -1,0 +1,827 @@
+nohup: ignoring input
+
+Computers / CPU cores / Max jobs to run
+1:local / 64 / 20
+
+Computer:jobs running/jobs completed/%of started jobs/Average seconds to complete
+local:1/0/100%/0.0s local:1/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...local:1/0/100%/0.0s 
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+local:1/0/100%/0.0s    % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+local:1/0/100%/0.0s local:1/0/100%/0.0s   % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split1...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcovlocal:1/0/100%/0.0s erage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split1 in module user, 0 msec 43680 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsultelocal:1/0/100%/0.0s d /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+local:1/0/100%/0.0s      % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+local:1/0/100%/0.0s    % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+local:1/0/100%/0.0s  % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 8 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+local:1/0/100%/0.0s  % reconsulted /data/dp5/OMENlocal:1/0/100%/0.0s /example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/fileEHbt5X...
+ % consulted /tmp/fileEHbt5X in module example_data/path_definition.dslp.internal_representation, 1 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 36 msec 1312160 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 16 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 600 msec 21093488 bytes
+local:1/0/100%/0.0s local:1/0/100%/0.0s local:1/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 1 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 4 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split10...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split10 in module user, 1 msec 43360 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 2 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 3 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 5 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/filePX61F4...
+ % consulted /tmp/filePX61F4 in module example_data/path_definition.dslp.internal_representation, 0 msec 13968 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:2/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 30 msec 1312704 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 19 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 633 msec 21093488 bytes
+local:2/0/100%/0.0s local:2/0/100%/0.0s local:2/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 3 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 5 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 7 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split2...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split2 in module user, 1 msec 43712 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 1 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 3 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 3 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 6 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/filectTjEb...
+ % consulted /tmp/filectTjEb in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 36 msec 1312064 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+local:3/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 19 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:3/0/100%/0.0s local:3/0/100%/0.0s local:3/0/100%/0.0s local:3/0/100%/0.0s local:3/0/100%/0.0s local:3/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 621 msec 21093488 bytes
+local:3/0/100%/0.0s local:3/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 5 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 6 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split3...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split3 in module user, 1 msec 43040 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 5 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 5 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 9 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 2 msec 100480 bytes
+ % consulting /tmp/file8LNxMe...
+ % consulted /tmp/file8LNxMe in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 35 msec 1312736 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+local:4/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 12 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:4/0/100%/0.0s local:4/0/100%/0.0s local:4/0/100%/0.0s local:4/0/100%/0.0s local:4/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 675 msec 21093488 bytes
+local:4/0/100%/0.0s local:4/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 0 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 4 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split4...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split4 in module user, 1 msec 43408 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 1 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 6 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 2 msec 100480 bytes
+ % consulting /tmp/fileX6Wgbo...
+ % consulted /tmp/fileX6Wgbo in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 29 msec 1312384 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 16 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:5/0/100%/0.0s local:5/0/100%/0.0s local:5/0/100%/0.0s local:5/0/100%/0.0s local:5/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 592 msec 21093488 bytes
+local:5/0/100%/0.0s local:5/0/100%/0.0s local:5/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 5 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 7 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 7 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split5...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split5 in module user, 1 msec 43744 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 1 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 2 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 8 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 8 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 15 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 5 msec 100480 bytes
+ % consulting /tmp/fileBUBh7y...
+ % consulted /tmp/fileBUBh7y in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:6/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 64 msec 1312080 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 31 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:6/0/100%/0.0s local:6/0/100%/0.0s local:6/0/100%/0.0s local:6/0/100%/0.0s local:6/0/100%/0.0s local:6/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 912 msec 21093488 bytes
+local:6/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 2 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 5 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 6 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 8 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split6...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split6 in module user, 1 msec 42944 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 2 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 7 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 8 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 15 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 5 msec 100480 bytes
+ % consulting /tmp/fileTupgAP...
+ % consulted /tmp/fileTupgAP in module example_data/path_definition.dslp.internal_representation, 1 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:7/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 73 msec 1312864 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 37 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:7/0/100%/0.0s local:7/0/100%/0.0s local:7/0/100%/0.0s local:7/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 628 msec 21093488 bytes
+local:7/0/100%/0.0s local:7/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 2 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 5 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 9 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 10 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split7...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split7 in module user, 1 msec 43088 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 7 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 4 msec 100480 bytes
+ % consulting /tmp/fileS3m4ZP...
+ % consulted /tmp/fileS3m4ZP in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:8/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 68 msec 1312736 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 23 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:8/0/100%/0.0s local:8/0/100%/0.0s local:8/0/100%/0.0s local:8/0/100%/0.0s local:8/0/100%/0.0s local:8/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 5 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split8...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split8 in module user, 0 msec 43648 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 6 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/fileeKKdXU...
+ % consulted /tmp/fileeKKdXU in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 32 msec 1312144 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 14 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:9/0/100%/0.0s local:9/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 1167 msec 21093488 bytes
+local:9/0/100%/0.0s local:9/0/100%/0.0s local:9/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 627 msec 21093488 bytes
+local:9/0/100%/0.0s local:9/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 2 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 5 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 6 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 7 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split9...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.670.650path_definition.dslpsolution_3_genes-3.pl.split9 in module user, 1 msec 43552 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 11 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 5 msec 100480 bytes
+ % consulting /tmp/fileTBw6v0...
+ % consulted /tmp/fileTBw6v0 in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:10/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 65 msec 1312224 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 31 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:10/0/100%/0.0s local:10/0/100%/0.0s local:10/0/100%/0.0s local:10/0/100%/0.0s local:10/0/100%/0.0s local:10/0/100%/0.0s local:10/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split1...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split1 in module user, 1 msec 43680 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 5 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 9 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/file08Xj6d...
+ % consulted /tmp/file08Xj6d in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 27 msec 1312160 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 18 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:11/0/100%/0.0s local:11/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 1184 msec 21093488 bytes
+local:11/0/100%/0.0s local:11/0/100%/0.0s local:11/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 604 msec 21093488 bytes
+local:11/0/100%/0.0s local:11/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 2 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 2 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split10...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split10 in module user, 0 msec 43360 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 2 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 2 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 2 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/file2bM52k...
+ % consulted /tmp/file2bM52k in module example_data/path_definition.dslp.internal_representation, 0 msec 13968 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 33 msec 1312704 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 19 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:12/0/100%/0.0s local:12/0/100%/0.0s local:12/0/100%/0.0s local:12/0/100%/0.0s local:12/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 574 msec 21093488 bytes
+local:12/0/100%/0.0s local:12/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 0 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 0 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 0 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 1 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split2...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split2 in module user, 1 msec 43712 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 1 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 8 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 8 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 16 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 5 msec 100480 bytes
+ % consulting /tmp/filen5WtRt...
+ % consulted /tmp/filen5WtRt in module example_data/path_definition.dslp.internal_representation, 1 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:13/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 56 msec 1312064 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 30 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:13/0/100%/0.0s local:13/0/100%/0.0s local:13/0/100%/0.0s local:13/0/100%/0.0s local:13/0/100%/0.0s local:13/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 3 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 5 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split3...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split3 in module user, 0 msec 43040 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 2 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 2 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 4 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 2 msec 100480 bytes
+ % consulting /tmp/files8go6r...
+ % consulted /tmp/files8go6r in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 28 msec 1312736 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 16 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:14/0/100%/0.0s local:14/0/100%/0.0s local:14/0/100%/0.0s local:14/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 1303 msec 21093488 bytes
+local:14/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 562 msec 21093488 bytes
+local:14/0/100%/0.0s local:14/0/100%/0.0s local:14/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 2 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 5 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 10 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 10 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split4...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split4 in module user, 0 msec 43408 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 1 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 7 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 8 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 14 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 6 msec 100480 bytes
+ % consulting /tmp/fileyNB1eJ...
+ % consulted /tmp/fileyNB1eJ in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:15/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 75 msec 1312384 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 32 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:15/0/100%/0.0s local:15/0/100%/0.0s local:15/0/100%/0.0s local:15/0/100%/0.0s local:15/0/100%/0.0s local:15/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 0 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 3 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 7 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 8 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split5...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split5 in module user, 0 msec 43744 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 0 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 6 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 7 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 10 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 4 msec 100480 bytes
+ % consulting /tmp/fileymljQQ...
+ % consulted /tmp/fileymljQQ in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 61 msec 1312080 bytes
+local:16/0/100%/0.0s  % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 15 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:16/0/100%/0.0s local:16/0/100%/0.0s local:16/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 1335 msec 21093488 bytes
+local:16/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 579 msec 21093488 bytes
+local:16/0/100%/0.0s local:16/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 0 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 7 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 9 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split6...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split6 in module user, 1 msec 42944 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 1 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 7 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 8 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 13 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/filePATWLV...
+ % consulted /tmp/filePATWLV in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:17/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 73 msec 1312864 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 34 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:17/0/100%/0.0s local:17/0/100%/0.0s local:17/0/100%/0.0s local:17/0/100%/0.0s local:17/0/100%/0.0s local:17/0/100%/0.0s local:17/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+ % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 972 msec 21093488 bytes
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split7...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split7 in module user, 1 msec 43088 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 1 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 4 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 4 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 8 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/fileLJJuwe...
+ % consulted /tmp/fileLJJuwe in module example_data/path_definition.dslp.internal_representation, 1 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 27 msec 1312736 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 18 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:18/0/100%/0.0s local:18/0/100%/0.0s local:18/0/100%/0.0s local:18/0/100%/0.0s local:18/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 600 msec 21093488 bytes
+local:18/0/100%/0.0s local:18/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 4 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 9 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 10 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split8...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split8 in module user, 1 msec 43648 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 1 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 6 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 7 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 12 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 5 msec 100480 bytes
+ % consulting /tmp/filePMl50j...
+ % consulted /tmp/filePMl50j in module example_data/path_definition.dslp.internal_representation, 0 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+local:19/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 68 msec 1312144 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 36 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:19/0/100%/0.0s local:19/0/100%/0.0s local:19/0/100%/0.0s local:19/0/100%/0.0s local:19/0/100%/0.0s local:19/0/100%/0.0s % Restoring file /usr/lib/Yap/startup.yss
+YAP 6.2.2 (x86_64-linux): Sat Sep 17 13:59:03 UTC 2016
+ % consulting /data/dp5/OMEN/experiment_framework.pl...
+  % reconsulting /usr/share/Yap/system.yap...
+   % reconsulting /usr/share/Yap/lists.yap...
+    % reconsulting /usr/share/Yap/error.pl...
+    % reconsulted /usr/share/Yap/error.pl in module error, 1 msec 33920 bytes
+   % reconsulted /usr/share/Yap/lists.yap in module lists, 2 msec 68512 bytes
+  % reconsulted /usr/share/Yap/system.yap in module operating_system_support, 4 msec 146752 bytes
+ % consulted /data/dp5/OMEN/experiment_framework.pl in module user, 5 msec 181632 bytes
+ % consulting /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split9...
+ % consulted /data/dp5/OMEN/new_experiment_CADD_non_aggr.plcoverage_non_aggr.plnetwork.pl1.0e-60.671.00path_definition.dslpsolution_3_genes-3.pl.split9 in module user, 1 msec 43552 bytes
+ % reconsulting /data/dp5/OMEN/dslp.pl...
+  % reconsulting /usr/share/Yap/random.yap...
+  % reconsulted /usr/share/Yap/random.yap in module random, 1 msec 9744 bytes
+  % reconsulting /usr/share/Yap/pairs.pl...
+  % reconsulted /usr/share/Yap/pairs.pl in module pairs, 0 msec 10848 bytes
+  % reconsulting /usr/share/Yap/apply.yap...
+   % reconsulting /usr/share/Yap/maplist.yap...
+    % reconsulting /usr/share/Yap/charsio.yap...
+    % reconsulted /usr/share/Yap/charsio.yap in module charsio, 0 msec 13456 bytes
+    % reconsulting /usr/share/Yap/occurs.yap...
+     % reconsulting /usr/share/Yap/arg.yap...
+     % reconsulted /usr/share/Yap/arg.yap in module arg, 0 msec 5168 bytes
+    % reconsulted /usr/share/Yap/occurs.yap in module occurs, 0 msec 13744 bytes
+   % reconsulted /usr/share/Yap/maplist.yap in module maplist, 0 msec 115168 bytes
+  % reconsulted /usr/share/Yap/apply.yap in module apply, 0 msec 128336 bytes
+ % reconsulted /data/dp5/OMEN/dslp.pl in module dslp, 5 msec 255824 bytes
+ % reconsulting /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation...
+ % reconsulted /data/dp5/OMEN/example_data/path_definition.dslp.internal_representation in module example_data/path_definition.dslp.internal_representation, 3 msec 100480 bytes
+ % consulting /tmp/file6M0pzp...
+ % consulted /tmp/file6M0pzp in module example_data/path_definition.dslp.internal_representation, 1 msec 13824 bytes
+ % consulting /data/dp5/OMEN/new_data/CADD_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/CADD_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 33 msec 1312224 bytes
+ % consulting /data/dp5/OMEN/new_data/coverage_non_aggr.pl...
+ % consulted /data/dp5/OMEN/new_data/coverage_non_aggr.pl in module example_data/path_definition.dslp.internal_representation, 17 msec 718464 bytes
+ % consulting /data/dp5/OMEN/new_data/network.pl...
+local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 1162 msec 21093488 bytes
+local:20/0/100%/0.0s local:20/0/100%/0.0s  % consulted /data/dp5/OMEN/new_data/network.pl in module example_data/path_definition.dslp.internal_representation, 585 msec 21093488 bytes
+local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s local:20/0/100%/0.0s compressing_go
+% YAP execution halted
+local:20/0/100%/0.0s local:19/1/100%/86.0s local:19/1/100%/86.0s local:19/1/100%/87.0s local:19/1/100%/88.0s local:19/1/100%/88.0s local:19/1/100%/89.0s local:19/1/100%/90.0s local:19/1/100%/90.0s local:19/1/100%/91.0s local:19/1/100%/92.0s local:19/1/100%/93.0s local:19/1/100%/94.0s local:19/1/100%/95.0s local:19/1/100%/97.0s local:19/1/100%/98.0s local:19/1/100%/99.0s local:19/1/100%/100.0s local:19/1/100%/101.0s local:19/1/100%/102.0s local:19/1/100%/103.0s local:19/1/100%/104.0s local:19/1/100%/105.0s local:19/1/100%/106.0s local:19/1/100%/107.0s local:19/1/100%/108.0s local:19/1/100%/109.0s local:19/1/100%/110.0s local:19/1/100%/111.0s local:19/1/100%/112.0s local:19/1/100%/113.0s local:19/1/100%/114.0s local:19/1/100%/115.0s local:19/1/100%/116.0s local:19/1/100%/117.0s local:19/1/100%/118.0s local:19/1/100%/119.0s local:19/1/100%/120.0s local:19/1/100%/121.0s local:19/1/100%/122.0s compressing_go
+% YAP execution halted
+local:19/1/100%/123.0s local:19/1/100%/123.0s local:18/2/100%/61.5s local:18/2/100%/61.5s local:18/2/100%/62.0s local:18/2/100%/62.0s local:18/2/100%/62.5s local:18/2/100%/62.5s compressing_go
+% YAP execution halted
+local:18/2/100%/63.0s local:18/2/100%/63.0s local:17/3/100%/42.0s local:17/3/100%/42.0s local:17/3/100%/42.3s local:17/3/100%/42.3s local:17/3/100%/42.7s local:17/3/100%/42.7s local:17/3/100%/43.0s local:17/3/100%/43.3s local:17/3/100%/43.7s local:17/3/100%/43.7s local:17/3/100%/44.0s local:17/3/100%/44.3s local:17/3/100%/45.0s local:17/3/100%/45.3s local:17/3/100%/45.7s local:17/3/100%/46.0s local:17/3/100%/46.3s local:17/3/100%/46.7s local:17/3/100%/47.0s local:17/3/100%/47.3s local:17/3/100%/47.7s local:17/3/100%/48.0s local:17/3/100%/48.3s compressing_go
+% YAP execution halted
+local:17/3/100%/48.3s local:16/4/100%/36.2s local:16/4/100%/36.2s compressing_go
+% YAP execution halted
+local:16/4/100%/36.5s local:16/4/100%/36.5s local:15/5/100%/29.2s local:15/5/100%/29.2s local:15/5/100%/29.2s local:15/5/100%/29.4s local:15/5/100%/29.4s local:15/5/100%/29.4s local:15/5/100%/29.6s local:15/5/100%/29.6s local:15/5/100%/29.8s local:15/5/100%/30.0s local:15/5/100%/30.0s local:15/5/100%/30.2s compressing_go
+% YAP execution halted
+local:15/5/100%/30.2s local:14/6/100%/25.2s local:14/6/100%/25.2s local:14/6/100%/25.3s local:14/6/100%/25.3s local:14/6/100%/25.5s local:14/6/100%/25.5s local:14/6/100%/25.7s local:14/6/100%/25.8s compressing_go
+% YAP execution halted
+local:14/6/100%/25.8s local:13/7/100%/22.1s local:13/7/100%/22.1s local:13/7/100%/22.1s local:13/7/100%/22.3s local:13/7/100%/22.3s local:13/7/100%/22.4s local:13/7/100%/22.6s local:13/7/100%/22.6s local:13/7/100%/22.7s local:13/7/100%/22.9s local:13/7/100%/23.0s local:13/7/100%/23.1s local:13/7/100%/23.3s local:13/7/100%/23.4s compressing_go
+% YAP execution halted
+local:13/7/100%/23.6s local:12/8/100%/20.6s local:12/8/100%/20.6s compressing_go
+% YAP execution halted
+local:12/8/100%/20.8s local:12/8/100%/20.8s local:11/9/100%/18.4s local:11/9/100%/18.4s local:11/9/100%/18.4s local:11/9/100%/18.4s compressing_go
+% YAP execution halted
+local:11/9/100%/18.6s local:10/10/100%/16.7s local:10/10/100%/16.7s local:10/10/100%/16.7s local:10/10/100%/16.7s local:10/10/100%/16.7s local:10/10/100%/16.8s local:10/10/100%/16.8s local:10/10/100%/16.8s local:10/10/100%/16.9s local:10/10/100%/16.9s local:10/10/100%/16.9s local:10/10/100%/17.0s local:10/10/100%/17.0s local:10/10/100%/17.1s local:10/10/100%/17.2s local:10/10/100%/17.3s local:10/10/100%/17.3s compressing_go
+% YAP execution halted
+local:10/10/100%/17.4s local:9/11/100%/15.8s local:9/11/100%/15.8s local:9/11/100%/15.8s local:9/11/100%/15.9s local:9/11/100%/15.9s local:9/11/100%/16.0s local:9/11/100%/16.1s local:9/11/100%/16.1s local:9/11/100%/16.2s local:9/11/100%/16.3s local:9/11/100%/16.4s local:9/11/100%/16.5s local:9/11/100%/16.5s compressing_go
+% YAP execution halted
+local:9/11/100%/16.6s local:8/12/100%/15.2s local:8/12/100%/15.2s local:8/12/100%/15.3s local:8/12/100%/15.3s compressing_go
+% YAP execution halted
+local:8/12/100%/15.4s local:7/13/100%/14.2s local:7/13/100%/14.2s local:7/13/100%/14.2s local:7/13/100%/14.2s local:7/13/100%/14.3s local:7/13/100%/14.3s local:7/13/100%/14.4s local:7/13/100%/14.4s local:7/13/100%/14.5s compressing_go
+% YAP execution halted
+local:7/13/100%/14.5s local:6/14/100%/13.4s local:6/14/100%/13.4s local:6/14/100%/13.4s local:6/14/100%/13.5s local:6/14/100%/13.5s compressing_go
+% YAP execution halted
+local:6/14/100%/13.6s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.7s local:5/15/100%/12.8s local:5/15/100%/12.8s local:5/15/100%/12.9s local:5/15/100%/12.9s compressing_go
+% YAP execution halted
+local:5/15/100%/12.9s local:4/16/100%/12.1s local:4/16/100%/12.1s local:4/16/100%/12.1s local:4/16/100%/12.1s local:4/16/100%/12.2s local:4/16/100%/12.2s local:4/16/100%/12.2s local:4/16/100%/12.2s local:4/16/100%/12.3s local:4/16/100%/12.4s local:4/16/100%/12.4s local:4/16/100%/12.4s local:4/16/100%/12.5s local:4/16/100%/12.6s local:4/16/100%/12.6s local:4/16/100%/12.7s local:4/16/100%/12.8s local:4/16/100%/12.8s local:4/16/100%/12.9s compressing_go
+% YAP execution halted
+local:4/16/100%/12.9s local:3/17/100%/12.2s local:3/17/100%/12.2s compressing_go
+% YAP execution halted
+local:3/17/100%/12.2s local:2/18/100%/11.5s local:2/18/100%/11.5s local:2/18/100%/11.6s local:2/18/100%/11.6s local:2/18/100%/11.6s local:2/18/100%/11.6s local:2/18/100%/11.6s local:2/18/100%/11.6s local:2/18/100%/11.7s local:2/18/100%/11.7s local:2/18/100%/11.7s local:2/18/100%/11.8s local:2/18/100%/11.8s local:2/18/100%/11.8s local:2/18/100%/11.9s local:2/18/100%/11.9s local:2/18/100%/12.0s local:2/18/100%/12.1s local:2/18/100%/12.1s local:2/18/100%/12.2s compressing_go
+% YAP execution halted
+local:2/18/100%/12.2s local:1/19/100%/11.5s local:1/19/100%/11.5s local:1/19/100%/11.6s local:1/19/100%/11.6s compressing_go
+% YAP execution halted
+local:1/19/100%/11.6s local:0/20/100%/11.1s local:0/20/100%/11.1s 
+compressing_go
+rm: cannot remove 'argfile': No such file or directory
+Warning: /data/dp5/OMEN/evaluate_paths.pl:168:
+	Local definition of user:foldl/4 overrides weak import from apply
+written to 'output/09_04_2023.09_46_1681026410/output_file_1.evaluated.filtered_0.67'.
+cat: -: Bad file descriptor
+Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+Generating graph file, cannot links file, and must links file.
+GENERATE PARAMETERS FILE FOR PATTERN COLLECTION step
+0 output/09_04_2023.09_46_1681026410
+STEP 1: PATTERN COLLECTION step
+STEP 2: EVALUATE PATHS step
+STEP 3: FILTER PATTERNS step
+STEP 4: GENERATE PROBABILISTIC NETWORK step
+STEP 5: GENERATE RANKING step
+STEP 6: CLUSTERING step
