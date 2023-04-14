@@ -1,6 +1,3 @@
-const filter_aggr = 8
-const filter_non_aggr = 0
-
 class GoNetic {
     constructor() {
     };
@@ -13,12 +10,12 @@ class GoNetic {
         this.radius = radius;
         this.scalingFactor = 1.6;
         this.strokeWidth = 6 * this.scalingFactor * 1.3;
-        this.fontSize = 50 * this.scalingFactor;
+        this.fontSize = 40;
         this.pieSize = this.scalingFactor;
         this.nodeSize = this.radius * this.scalingFactor;
         this.pieLimit = 24;
         // set highlight mode, neighbors or component
-        this.highlightMode = 'neighbors';
+        this.highlightMode = 'component';
         // add buttons
         //this.addHighlightButtons();
         this.addGeneSetButtons();
@@ -32,14 +29,38 @@ class GoNetic {
         this.nodeCount = this.graph.nodes.length;
         this.width = 300 * Math.sqrt(this.nodeCount);
         this.height = 200 * Math.sqrt(this.nodeCount);
-        // compute node opacity
-        /*this.graph.nodes.forEach(n => {
-            if (n.mutant.filter(m => m).length === 0) {
-                n.opacity = 0.3
-            } else {
-                n.opacity = 1
+
+        // filter edges and nodes
+        const links_filtered = []
+        const nodes_links = new Set()
+        for (const link of this.graph.links) {
+            if (link.type === 'pp_blue' && link.max_cost > gonetic.graph.filter_non_aggr) {
+                links_filtered.push(link)
+                console.log(link)
+                nodes_links.add(link.source)
+                nodes_links.add(link.target)
             }
-        });*/
+            else if (link.type === 'pp_red' && link.max_cost > gonetic.graph.filter_aggr) {
+                links_filtered.push(link)
+                nodes_links.add(link.source)
+                nodes_links.add(link.target)
+            }
+        }
+        this.graph.links = links_filtered
+        const nodes_filtered = []
+        const nodes_nodes = new Set();
+        for (const node of this.graph.nodes) {
+            for (const link of this.graph.links) {
+                if (node.id === link.source || node.id === link.target) {
+                    nodes_filtered.push(node)
+                    nodes_nodes.add(node.id)
+                    break
+                }
+            }
+        }
+        this.graph.nodes = nodes_filtered;
+
+
         // create geneSetMap
         this.geneSetMap = {};
         for (const setID in this.geneSets) {
@@ -91,31 +112,43 @@ class GoNetic {
         this.neighbors = {};
         this.graph.links.forEach(link => {
             link.weight = -link.max_cost;
-	    // increment node degrees
-	    this.nodeInDegrees[link.target] = (this.nodeInDegrees[link.target] | 0) + 1;
-	    this.nodeOutDegrees[link.source] = (this.nodeOutDegrees[link.source] | 0) + 1;
-	    if (this.neighbors[link.source] === undefined) {
-	        this.neighbors[link.source] = [];
-	    }
-	    this.neighbors[link.source].push(link.target);
-	    if (this.neighbors[link.target] === undefined) {
-	        this.neighbors[link.target] = [];
-	    }
-	    this.neighbors[link.target].push(link.source);
+            // increment node degrees
+            this.nodeInDegrees[link.target] = (this.nodeInDegrees[link.target] | 0) + 1;
+            this.nodeOutDegrees[link.source] = (this.nodeOutDegrees[link.source] | 0) + 1;
+            if (this.neighbors[link.source] === undefined) {
+                this.neighbors[link.source] = [];
+            }
+            this.neighbors[link.source].push({id: link.target, link: link});
+            if (this.neighbors[link.target] === undefined) {
+                this.neighbors[link.target] = [];
+            }
+            this.neighbors[link.target].push({id: link.source, link: link});
         });
 
+        this.max_aggr = graph.links.filter(x => x.type === 'pp_red')
+            .reduce((m, x) => m = Math.max(m, x.max_cost), 0);
+        this.max_non_aggr = graph.links.filter(x => x.type === 'pp_blue')
+            .reduce((m, x) => m = Math.max(m, x.max_cost), 0);
+
         function traverse(node, group, neighbors, nodesById) {
-            if ("group" in node) {
+            if (node !== undefined && "group" in node) {
                 node.group = Math.min(node.group, group);
-            } else if (neighbors[node.id] !== undefined) {
+            } else if (node !== undefined && neighbors[node.id] !== undefined) {
                 node.group = group;
-                neighbors[node.id].forEach(id => traverse(nodesById[id], group, neighbors, nodesById));
+                neighbors[node.id].forEach(link => {
+                    if (link.link.type === 'pp_red' && link.link.max_cost < gonetic.graph.filter_aggr) {
+                        return;
+                    }
+                    if (link.link.type === 'pp_blue' && link.link.max_cost < gonetic.graph.filter_non_aggr) {
+                        return;
+                    }
+                    traverse(nodesById[link.id], group, neighbors, nodesById);
+                });
             }
         }
 
         this.nodesById = {};
         this.graph.nodes.forEach(node => this.nodesById[node.id] = node);
-        //console.log(this.neighbors)
         this.graph.nodes.forEach((node, i) => traverse(node, i, this.neighbors, this.nodesById));
         // determine all the groups and assign them an index
         this.groups = {}
@@ -209,19 +242,19 @@ class GoNetic {
             //.attr("stroke-width", d => 5 + ((d.max_cost + 1) * 12) / 8)
             //.attr("opacity", d => (1 + d.max_cost) / 8)
             .attr("opacity", function (d) {
-                if (d.type === 'pp_blue' && d.max_cost > filter_non_aggr) {
+                if (d.type === 'pp_blue' && d.max_cost > gonetic.graph.filter_non_aggr) {
                     return (1 + d.max_cost) / 8;
                 } 
-                else if (d.type === 'pp_red' && d.max_cost > filter_aggr) {
+                else if (d.type === 'pp_red' && d.max_cost > gonetic.graph.filter_aggr) {
                     return (1 + d.max_cost) / 8;
                 } 
                 else {return 0}
             })
             .attr("stroke-width", function (d) {
-                if (d.type === 'pp_blue' && d.max_cost > filter_non_aggr) {
+                if (d.type === 'pp_blue' && d.max_cost > gonetic.graph.filter_non_aggr) {
                     return 5 + ((d.max_cost + 1) * 12) / 8;
                 } 
-                else if (d.type === 'pp_red' && d.max_cost > filter_aggr) {
+                else if (d.type === 'pp_red' && d.max_cost > gonetic.graph.filter_aggr) {
                     return 5 + ((d.max_cost + 1) * 12) / 8;
                 }
                 else {return 0}
@@ -234,7 +267,7 @@ class GoNetic {
             .append("g")
         this.node.append("circle")
             .attr("r", d => d.radius * .5)
-            .attr("fill", "white")
+            .attr("fill", "#877F7F")
             .attr("endAngle", Math.PI)
         this.node.append("path")
             .attr("d", d3.arc()
@@ -242,7 +275,7 @@ class GoNetic {
                 .outerRadius(d => d.radius * .6)
                 .startAngle(0)
                 .endAngle(Math.PI * 2))
-            .attr("fill", "black")
+            .attr("fill", "#877F7F")
 
         /*if (this.isDrawingPies()) {
             this.drawPies();
@@ -270,7 +303,7 @@ class GoNetic {
             })
             .style("fill", "#000000")
             .style("font-family", "Arial")
-            .style("font-size", this.fontSize)
+            .style("font-size", this.fontSize + "px")
             .style("pointer-events", "none"); // to prevent mouseover/drag capture
 
 
@@ -354,12 +387,8 @@ class GoNetic {
             return hasGeneSet(d.node) ? "block" : "none";
         });
         this.link.style("opacity", function (d) {
-            if(d.max_cost>3){
-                const opacity = (1 + d.max_cost) / 8;
-            }
-            else {const opacity = 0;}
             return hasGeneSet(d.source) && hasGeneSet(d.target)
-                ? opacity
+                ? linkOpacity(d)
                 : 0.1;
         });
         this.setInfo(`Highlighting gene set ${setID}`);
@@ -519,7 +548,7 @@ function forceCluster() {
 function forceCollide() {
     const alpha = 0.5; // fixed for greater rigidity!
     const padding1 = gonetic.radius * 30; // separation between same-color nodes
-    const padding2 = gonetic.radius * 30; // separation between different-color nodes
+    const padding2 = gonetic.radius * 100; // separation between different-color nodes
     let nodes;
     let maxRadius;
 
@@ -554,6 +583,9 @@ function forceCollide() {
 }
 
 const linkForceStrength = link => {
+    if (linkOpacity(link) === 0) {
+        return 0;
+    }
     if (gonetic.nodeOutDegrees[link.target.id] === 1) {
         return 0.9;
     }
@@ -649,6 +681,18 @@ const linkArc = d => {
     return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
 }
 
+let linkOpacity = (d) => {
+    const filter_non_aggr = gonetic.graph.filter_non_aggr;
+    if(d.type === 'pp_blue' && d.max_cost > filter_non_aggr){
+        return 0.1 + 0.9 * (d.max_cost - filter_non_aggr) / (gonetic.max_non_aggr - filter_non_aggr);
+    }
+    const filter_aggr = gonetic.graph.filter_aggr;
+    if(d.type === 'pp_red' && d.max_cost > filter_aggr){
+        return 0.1 + 0.9 * (d.max_cost - filter_aggr) / (gonetic.max_aggr - filter_aggr);
+    }
+    return 0;
+}
+
 let focus = (event, d) => {
     const datum = d3.select(event.target).datum();
     let compare = (_) => true;
@@ -671,16 +715,8 @@ let focus = (event, d) => {
         return compare(d.node) ? "block" : "none";
     });
     gonetic.link.style("opacity", function (d) {
-        if(d.type === 'pp_blue' && d.max_cost > filter_non_aggr){
-                const opacity = (1 + d.max_cost) / 8;
-            }
-        else if(d.type === 'pp_red' && d.max_cost > filter_aggr){
-                const opacity = (1 + d.max_cost) / 8;
-            }
-        else {const opacity = 0;}
-        let opacity;
         return compare(d.source) && compare(d.target)
-            ? opacity
+            ? linkOpacity(d)
             : 0.1;
     });
     //let mutants = d.mutant.map((x, i) => x ? window.graph.conditions[i] : undefined).filter(i => i !== undefined);
@@ -696,16 +732,7 @@ let focus = (event, d) => {
 const unfocus = (event) => {
     gonetic.labelNode.attr("display", "block");
     gonetic.node.style("opacity", d => d.opacity);
-    //gonetic.link.style("opacity", d => (1 + d.max_cost) / 8);
-    gonetic.link.style("opacity", function (d) {
-                if (d.type === 'pp_blue' && d.max_cost > filter_non_aggr) {
-                    return (1 + d.max_cost) / 8;
-                } 
-                else if (d.type === 'pp_red' && d.max_cost > filter_aggr) {
-                    return (1 + d.max_cost) / 8;
-                } 
-                else {return 0}
-            })
+    gonetic.link.style("opacity", linkOpacity);
 }
 const updateNode = (node) => {
     node.attr("transform", function (d) {

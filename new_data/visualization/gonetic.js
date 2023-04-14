@@ -12,7 +12,7 @@ class GoNetic {
         this.radius = radius;
         this.scalingFactor = 1.6;
         this.strokeWidth = 6 * this.scalingFactor * 1.3;
-        this.fontSize = 50 * this.scalingFactor;
+        this.fontSize = 40;
         this.pieSize = this.scalingFactor;
         this.nodeSize = this.radius * this.scalingFactor;
         this.pieLimit = 24;
@@ -39,6 +39,27 @@ class GoNetic {
                 n.opacity = 1
             }
         });*/
+
+
+        // filter edges and nodes
+        const links_filtered = []
+        for (const link of this.graph.links) {
+            if (link.max_cost > filter) {
+                links_filtered.push(link)
+            }
+        }
+        this.graph.links = links_filtered
+        const nodes_filtered = []
+        for (const node of this.graph.nodes) {
+            for (const link of this.graph.links) {
+                if (node.id === link.source || node.id === link.target) {
+                    nodes_filtered.push(node)
+                    break
+                }
+            }
+        }
+        this.graph.nodes = nodes_filtered;
+
         // create geneSetMap
         this.geneSetMap = {};
         for (const setID in this.geneSets) {
@@ -222,7 +243,7 @@ class GoNetic {
             .append("g")
         this.node.append("circle")
             .attr("r", d => d.radius * .5)
-            .attr("fill", "white")
+            .attr("fill", "#877F7F")
             .attr("endAngle", Math.PI)
         this.node.append("path")
             .attr("d", d3.arc()
@@ -230,7 +251,7 @@ class GoNetic {
                 .outerRadius(d => d.radius * .6)
                 .startAngle(0)
                 .endAngle(Math.PI * 2))
-            .attr("fill", "black")
+            .attr("fill", "#877F7F")
 
         /*if (this.isDrawingPies()) {
             this.drawPies();
@@ -258,7 +279,7 @@ class GoNetic {
             })
             .style("fill", "#000000")
             .style("font-family", "Arial")
-            .style("font-size", this.fontSize)
+            .style("font-size", this.fontSize + "px")
             .style("pointer-events", "none"); // to prevent mouseover/drag capture
 
 
