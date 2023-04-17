@@ -29,6 +29,8 @@ class GoNetic {
         this.nodeCount = this.graph.nodes.length;
         this.width = 300 * Math.sqrt(this.nodeCount);
         this.height = 200 * Math.sqrt(this.nodeCount);
+        this.graph.filter_non_aggr = 2
+        this.graph.filter_aggr = 2
 
         // filter edges and nodes
         const links_filtered = []
