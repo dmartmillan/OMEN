@@ -220,3 +220,14 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 1 &> outputfile_not_nonaggr_net8_1 2>&1&
 ```
+
+### Reduced non-aggressive
+
+- [ ] Alpha 0.65 - non-corrected - non-agressive 
+```ssh
+nohup python main.py new_data/CADD_non_aggr_reduced.pl new_data/coverage_non_aggr.pl new_data/network.pl -alpha 0.65 &> outputfile_nonaggr_0.65_reduced 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr_reduced.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_nonaggr_net8_0.65_reduced 2>&1&
+```
