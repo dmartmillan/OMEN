@@ -21,6 +21,9 @@ Coverage:
 Networks:
 - ’network.pl’ → network1
 - ’network8.pl’ → network8
+- ´network_MR_stack01.pl´ - MR_stack01
+- ´network_new_Reactome.pl´ - Reactome
+- ´network_Reactome_Dorothea_Aracne.pl´ - Reactome_Dorothea_Aracne
 
 ## Runs
 - Default prostate cancer run: alpha 0.8, threshold 0.67 (No corrected gene lengths)
@@ -221,13 +224,56 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network8.pl -alpha 1 &> outputfile_not_nonaggr_net8_1 2>&1&
 ```
 
-### Reduced non-aggressive
+## Reduced non-aggressive
 
-- [ ] Alpha 0.65 - non-corrected - non-agressive 
+- [X] Alpha 0.65 - non-corrected - non-agressive 
 ```ssh
 nohup python main.py new_data/CADD_non_aggr_reduced.pl new_data/coverage_non_aggr_reduced.pl new_data/network.pl -alpha 0.65 &> outputfile_nonaggr_0.65_reduced 2>&1&
 ```
-- [ ] Alpha 0.65 - non-corrected - non-agressive
+- [X] Alpha 0.65 - non-corrected - non-agressive
 ```ssh
 nohup python main.py new_data/CADD_non_aggr_reduced.pl new_data/coverage_non_aggr_reduced.pl new_data/network8.pl -alpha 0.65 &> outputfile_not_nonaggr_net8_0.65_reduced 2>&1&
+```
+
+## New networks
+### network_MR_stack01.pl
+- [ ] Alpha 0.65 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_all_MR_stack01_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_aggr_MR_stack01_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_nonaggr_MR_stack01_0.65 2>&1&
+```
+
+### network_new_Reactome.pl
+- [ ] Alpha 0.65 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_new_Reactome.pl -alpha 0.65 &> outputfile_not_all_new_Reactome_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network_new_Reactome.pl -alpha 0.65 &> outputfile_not_aggr_new_Reactome_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network_new_Reactome.pl -alpha 0.65 &> outputfile_not_nonaggr_new_Reactome_0.65 2>&1&
+```
+
+### network_Reactome_Dorothea_Aracne.pl
+- [ ] Alpha 0.65 - non-corrected - all
+```ssh
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_Reactome_Dorothea_Aracne.pl -alpha 0.65 &> outputfile_not_all_Dorothea_Aracne_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - agressive
+```ssh
+nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network_Reactome_Dorothea_Aracne.pl-alpha 0.65 &> outputfile_not_aggr_Dorothea_Aracne_0.65 2>&1&
+```
+- [ ] Alpha 0.65 - non-corrected - non-agressive
+```ssh
+nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network_Reactome_Dorothea_Aracne.pl -alpha 0.65 &> outputfile_not_nonaggr_Dorothea_Aracne_0.65 2>&1&
 ```
