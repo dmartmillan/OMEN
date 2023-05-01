@@ -237,7 +237,7 @@ nohup python main.py new_data/CADD_non_aggr_reduced.pl new_data/coverage_non_agg
 
 ## New networks
 ### network_MR_stack01.pl
-- [ ] Alpha 0.65 - non-corrected - all
+- [X] Alpha 0.65 - non-corrected - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_all_MR_stack01_0.65 2>&1&
 ```
@@ -245,7 +245,7 @@ nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_MR_s
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_aggr_MR_stack01_0.65 2>&1&
 ```
-- [ ] Alpha 0.65 - non-corrected - non-agressive
+- [X] Alpha 0.65 - non-corrected - non-agressive
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network_MR_stack01.pl -alpha 0.65 &> outputfile_not_nonaggr_MR_stack01_0.65 2>&1&
 ```
