@@ -265,15 +265,15 @@ nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new
 ```
 
 ### network_Reactome_Dorothea_Aracne.pl
-- [ ] Alpha 0.65 - non-corrected - all
+- [X] Alpha 0.65 - non-corrected - all
 ```ssh
 nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network_Reactome_Dorothea_Aracne.pl -alpha 0.65 &> outputfile_not_all_Dorothea_Aracne_0.65 2>&1&
 ```
-- [ ] Alpha 0.65 - non-corrected - agressive
+- [X] Alpha 0.65 - non-corrected - agressive
 ```ssh
 nohup python main.py new_data/CADD_aggr.pl new_data/coverage_aggr.pl new_data/network_Reactome_Dorothea_Aracne.pl-alpha 0.65 &> outputfile_not_aggr_Dorothea_Aracne_0.65 2>&1&
 ```
-- [ ] Alpha 0.65 - non-corrected - non-agressive
+- [X] Alpha 0.65 - non-corrected - non-agressive
 ```ssh
 nohup python main.py new_data/CADD_non_aggr.pl new_data/coverage_non_aggr.pl new_data/network_Reactome_Dorothea_Aracne.pl -alpha 0.65 &> outputfile_not_nonaggr_Dorothea_Aracne_0.65 2>&1&
 ```
