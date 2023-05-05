@@ -2,10 +2,11 @@
 
 # generate graph file, cannot links file, and must links file
 echo "Generating graph file, cannot links file, and must links file."
-network_file='new_data/network.pl'
-cadd_file='new_data/CADD.pl'
 filtered_patterns_file=$1
 number_of_nodes=$2
+network_file=$4
+cadd_file=$5
+
 
 # Design project, put the files in the current directory instead of in /tmp
 mkdir $3/clustering$1_$2
