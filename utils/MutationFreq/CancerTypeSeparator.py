@@ -3,6 +3,12 @@ import sys
 import csv
 import os
 
+'''
+Split the data set using the lymph node status, if it is affected then is considered for the aggressive data set.
+Data with no lymph node status is not considered
+Consider the name of the row with the lymph node status a 'ajcc_pathologic_n'
+'''
+
 # Functions
 
 def AggressiveSeparator(patientfile,lymphcol="ajcc_pathologic_n",naggre="N0",aggre="N1"): 
