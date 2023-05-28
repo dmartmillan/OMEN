@@ -1,7 +1,4 @@
-# OMEN: Network-based Driver Gene Identification using Mutual Exclusivity (1.0.0)
-
-## Design project version
-### UGent course: C003698A - Design Project
+# OMEN: Network-based Driver Gene Identification using Mutual Exclusivity (1.0.0) - Extended version
 
 ## Requirements
 
@@ -53,7 +50,6 @@ In turn their output will be stored there as well. The python interface main.py 
 
 ```
 
-
 Usage collecting patterns:
 ./pattern_collection.sh <numberOfThreads> <experimentFile> <outputFile>
     <numberOfThreads>    : Number of CPU threads to use simultaneously
@@ -84,3 +80,22 @@ Usage clustering data generations (network, must-link, cannot-link):
     <filteredPatternFile>       : Path of the output file generated during path filtering
     <N>                         : N is an integer, the top-N nodes that should be clustered
 ```
+## Folder composition:
+
+**New data**: auxiliar scrits to read and parse new data.
+
+`network.ipynb`: Create network.pl from Network data.
+
+`gene_patient_CADD.ipynb`: Creation of CADD files in all, aggr and non-aggr.
+
+`gene_patient_CADD_correct.ipynb`: Creation of CADD files in all and coverage file.
+
+`cancer_type_separator.py`: Separation of cancer type (aggr and non-aggr).
+
+**Visualization**: files for visualization of the probabilistic networks. 
+
+`probabilistic_network.ipynb`: Creation of `subnetwork` js file.
+
+`probabilistic_network_aggr_vs_non_aggr.ipynb`: Creation of `subnetwork` js file, for aggr. vs non-aggr.
+
+Files to visualize network: `subnetwork.html`, `gonetic.js`, `gonetic_aggr_vs_non_aggr.js` and `subnetwork_*.js`.
