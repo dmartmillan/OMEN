@@ -1,9 +1,0 @@
-gene_patient_probability_file('new_data/CADD_non_aggr_reduced.pl').
-path_definition_file('example_data/path_definition.dslp').
-gene_function_file('new_data/coverage_non_aggr.pl').
-network_file('new_data/network.pl').
-threshold(1.0e-6).
-pattern_quality_metric_threshold(0.67).
-mcda(weighted_sum,[0.65,0]).
-selection(['BDKRB1','BDP1','BEND3','BICD1','BICD2','BIRC5','BMI1','BMPR1B','BNC1','BNC2','BNIP1','BPTF','BRAF','BRD4','BRD9','BRPF1','BSN','BTBD8','BTN2A2','BTN3A3','C11orf71','C12orf74','C16orf46','C16orf54','C17orf53','C17orf78','C19orf44','C1QL2','C1QL3','C1orf159','C1orf87','C2CD2L','C2orf42','C3','C4B','C6orf165','C6orf62','C7orf57','C9orf3','C9orf91','CABLES1','CABP5','CACNA1A','CACNA1D','CACNA1E','CACNA2D3','CAD','CADM1','CAMK2N2','CAPZA1','CARD16','CARS','CASS4','CASZ1','CAT','CATIP','CATSPERD','CC2D1A','CCBE1','CCDC109B','CCDC110','CCDC144A','CCDC148','CCDC150','CCDC172','CCDC178','CCDC186','CCDC34','CCDC40','CCDC7','CCDC85A','CCDC88B','CCDC93','CCDC94','CCNA1','CCND3','CCT3','CCT4','CCT8L2','CD180','CD1B','CD1C','CD207','CD46','CD8A','CD8B','CDC42BPG','CDC42EP3','CDC73','CDH1','CDH18','CDH19','CDH2','CDH4','CDH5','CDH7','CDHR1','CDK11B','CDK12','CDK19','CDK5RAP3','CDKL3','CDSN','CDYL','CELSR3','CENPE','CENPP','CENPT','CEP120','CEP128','CEP152','CERCAM','CES1','CFAP45','CFAP70','CFH','CHAF1A','CHD7','CHIA','CHM','CHRD','CHRM2','CHRNA6','CHRNA9','CHST8','CIART','CIITA','CIRBP','CKMT2','CLCA1','CLDN12','CLDN16','CLEC12B','CLEC18B','CLEC1A','CLEC1B','CLSPN','CLSTN1','CLVS1','CNBD1','CNGA3','CNNM4','CNOT1','CNOT3','CNPY2','CNR1','CNTN3','CNTN4','CNTN6','CNTNAP4','CNTNAP5','COBLL1','COG7','COL11A1','COL11A2','COL17A1','COL18A1','COL20A1','COL22A1','COL27A1','COL4A3','COL4A3BP','COL5A2','COL6A3','COL6A5','COL6A6','COL7A1','COLGALT1','COPB1','COPZ2','COQ3','COQ7','CPEB1','CPEB4','CPED1','CPN1','CPNE9','CPS1','CPSF7'],1791).
-experiment_query(solution_3_genes(mcda(weighted_sum,[alpha(0.65),beta(0)]),0.67,_82)).
