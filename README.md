@@ -12,6 +12,8 @@ Linux (tested on Ubuntu 18.04)
 
 ## Usage
 
+Anaconda enviroment can be deployed with the [environment.yml](./environment.yml) file.
+
 ```
 usage: main.py [-h] [-path_definition_file [PATH_DEFINITION_FILE]]
                [-pattern_quality_threshold [PATTERN_QUALITY_THRESHOLD]]
