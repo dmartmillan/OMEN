@@ -120,17 +120,16 @@ else:
 
 # STEP 6
 # CLUSTERING 
-#print("STEP 6: CLUSTERING step")
-#N = [50,80,100,120,150,200]
-#if (step <= 6):
-#
-#    # Filter out some genes
-#    if filter_genes is not None:
-#        filter_genes_output(filter_genes, "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold), outdir)
-#
-#    subprocess.call(['./generate_file_to_keep_counts_of_links_in_function_of_N.sh',outdir])
-#    for n in N:
-#        subprocess.call(['./generate_clustering_data.sh', "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold),str(n),outdir, args.network_file,args.cadd_file])
-#
-#else:
-#    shutil.copytree(outlast + "/links_vs_N", outdir + "/links_vs_N")
+print("STEP 6: CLUSTERING step")
+N = [50,80,100,120,150,200]
+if (step <= 6):
+    # Filter out some genes
+    if filter_genes is not None:
+        filter_genes_output(filter_genes, "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold), outdir)
+
+    subprocess.call(['./generate_file_to_keep_counts_of_links_in_function_of_N.sh',outdir])
+    for n in N:
+        subprocess.call(['./generate_clustering_data.sh', "output_file_1.evaluated.filtered_" + str(args.pattern_quality_threshold),str(n),outdir, args.network_file,args.cadd_file])
+
+else:
+    shutil.copytree(outlast + "/links_vs_N", outdir + "/links_vs_N")
