@@ -12,90 +12,103 @@ Linux (tested on Ubuntu 18.04)
 
 ## Usage
 
-### Data format:
+```
+usage: main.py [-h] [-path_definition_file [PATH_DEFINITION_FILE]]
+               [-pattern_quality_threshold [PATTERN_QUALITY_THRESHOLD]]
+               [-threshold_probability [THRESHOLD_PROBABILITY]]
+               [-alpha [ALPHA]] [-cores [CORES]] [-step [STEP]]
+               [-outlast [OUTLAST]] [-filter FILTER [FILTER ...]]
+               [cadd_file] [coverage_file] [network_file]
 
-* CADD probabilities are provided as facts of gene_patient_probability/3 (args: Gene, Patient, Probability)
-and coverage data is specified in gene_coverage_helper/2 (args: Gene, Coverage_Score).
-* The interaction network is defined by the predicate undirected_interaction/2 (args: Node, Node)
+OMEN
 
-Note that both the interaction network and the coverage data need to contain a header as seen in the example data files:
-- example_data/tokheim_pancancer_somatic_coverage_ranks.pl
-- example_data/network.pl
+positional arguments:
+  cadd_file             CADD probabilities .pl filepath
+  coverage_file         Coverage .pl filepath
+  network_file          Network filepath
 
-### Execution:
-
-OMEN runs through a sequence of distinct steps.
-Each step can be called individually through its respective shell script as discussed in section Note below.
-
-In case you choose to interact through the shell scripts, your data (CADD, coverage, network)
-has to initially be linked in experiment_parameters.pl (the example data is used by default)
-
-Alternatively, you can also interact through a Python interface (main.py) . The Python interface will generate this
-experiment_parameters.pl file and perform the appropriate chaining across the shell scripts,
-thus all you have to do when using the Python interface is run main.py
-using the appropriate arguments as outlined in that file. Note that main.py terminates by calling ranking.sh
-Thus the final output is a gene ranking. It does not perform the clustering, which can only be
-achieved by manually calling ./generate_clustering_data.sh.
-
-
-## Note
-
-By default, pattern_collection.sh creates a directory called 'output' within the working directory
-Within this directory a subdirectory will be created for each run of pattern_collection.sh.
-It is within that directory that the output of pattern collection will be archived. 
-(For convenience, a copy of these files will also appear in the working directory)
-
-Subsequent scripts (evaluate_paths.sh,...) should be called with inputs drawn from that directory as indicated below.
-In turn their output will be stored there as well. The python interface main.py performs this chaining automatically.
-
+options:
+  -h, --help            show this help message and exit
+  -path_definition_file [PATH_DEFINITION_FILE]
+                        file specifying the path distribution
+  -pattern_quality_threshold [PATTERN_QUALITY_THRESHOLD]
+                        float specifying the quality a pattern has to exceed
+                        to be considered
+  -threshold_probability [THRESHOLD_PROBABILITY]
+                        math expression for the SLP threshold
+  -alpha [ALPHA]        value between 0 and 1 managing trade-off between the
+                        mutex term and the gene_freq term
+  -cores [CORES]        number of CPU threads to employ
+  -step [STEP]          step to execute OMEN
+  -outlast [OUTLAST]    output folder where continue OMEN run
+  -filter FILTER [FILTER ...]
+                        filter specific genes
 ```
 
-Usage collecting patterns:
-./pattern_collection.sh <numberOfThreads> <experimentFile> <outputFile>
-    <numberOfThreads>    : Number of CPU threads to use simultaneously
-    <experimentFile>     : Path to which a copy of the experiment file generated during pattern collection is written (ease of use feature)
-    <outputFile>         : Path to which a copy of the output file generaetd during pattern collection is written (ease of use feature)
-    
-Usage explicit scoring of paths:
-./evaluate_paths.sh <experimentFile> <outputFile>
-    <experimentFile>     : Path of the experiment file generated during pattern collection (e.g. new_experiment_[...].pl)
-    <outputFile>         : Path of the scored pattern file generated during pattern collection (e.g. output)
+### Example
 
-Usage explicit filtering of paths:
-./filter_patterns.sh <scoredPatternFile> <patternQualityThreshold>
-    <scoredPatternFile>         : Path of the output file generated during path evaluation
-    <patternQualityThreshold>   : float in [0,1] representing minimum pattern quality
-
-Usage probabilistic network generation:
-./probabilistic_network.sh <filteredPatternFile>
-    <filteredPatternFile>       : Path of the output file generated during path filtering
-
-Usage gene ranking:
-./ranking.sh <probabilisticNetwork> <network>
-    <probabilisticNetwork>      : Path of the output file generated during probabilistic network generation
-    <network>                   : Path of the file containing the interaction network
-
-Usage clustering data generations (network, must-link, cannot-link):
-./generate_clustering_data.sh <filteredPatternFile> <N>
-    <filteredPatternFile>       : Path of the output file generated during path filtering
-    <N>                         : N is an integer, the top-N nodes that should be clustered
+```bash
+nohup python main.py new_data/CADD.pl new_data/coverage.pl new_data/network.pl  > outputfile  2>&1& 
 ```
-## Folder composition:
 
-**New data**: auxiliar scrits to read and parse new data.
+`nohup` is employed to execute the command in the background and prevent to have the shell session opened.
 
-`network.ipynb`: Create network.pl from Network data.
+For more details in OMEN _Usage_ and its construction consult the original repository [OMEN: Network-based Driver Gene Identification using Mutual Exclusivity](https://github.com/DriesVanDaele/OMEN) and the original paper [https://doi.org/10.1093/bioinformatics/btac312](https://doi.org/10.1093/bioinformatics/btac312).
 
-`gene_patient_CADD.ipynb`: Creation of CADD files in all, aggr and non-aggr.
+## Folder distribution
 
-`gene_patient_CADD_correct.ipynb`: Creation of CADD files in all and coverage file.
+Data files and scripts for parsing input data, visualizing and analyzing. 
 
-`cancer_type_separator.py`: Separation of cancer type (aggr and non-aggr).
+### ***new_data* folder**
 
-**Visualization**: files for visualization of the probabilistic networks. 
+Auxiliar scrits to read and parse new data.
 
-`probabilistic_network.ipynb`: Creation of `subnetwork` js file.
+`network.ipynb` Create network.pl from Network data.
 
-`probabilistic_network_aggr_vs_non_aggr.ipynb`: Creation of `subnetwork` js file, for aggr. vs non-aggr.
+`gene_patient_CADD.ipynb` Creation of CADD files in all, aggr and non-aggr.
 
-Files to visualize network: `subnetwork.html`, `gonetic.js`, `gonetic_aggr_vs_non_aggr.js` and `subnetwork_*.js`.
+`gene_patient_CADD_correct.ipynb` Creation of CADD files in all and coverage file.
+
+`cancer_type_separator.py` Separation of cancer type (aggr and non-aggr).
+
+### ***visualization* folder**
+
+Files for visualization of the probabilistic networks. 
+
+`probabilistic_network.ipynb` Creation of `subnetwork` js file.
+
+`probabilistic_network_aggr_vs_non_aggr.ipynb` Creation of `subnetwork` js file, for aggr. vs non-aggr.
+
+To visualize network: `subnetwork.html`, `gonetic.js`, `gonetic_aggr_vs_non_aggr.js` and `subnetwork_*.js`.
+
+### ***utils* folder**
+
+Auxiliar scripts to make plots and analyze the OMEN's output. 
+
+`alpha_links.ipynb` Quantification of different link types in different alpha values.
+
+`alpha_vs_ranking_most_mutated_genes.ipynb` Alpha vs Ranking of the most mutated genes.
+
+`clustering_plot.ipynb` Gene heatmap in different clusters. 
+
+`compare_rankings.ipynb` Comparison of ranking with Venn diagram, Spearman, Overlap genes and Non-overlap genes, in different alpha values.
+
+`compare_rankings_same_alpha.ipynb` Comparison of ranking with Venn diagram, with the same alpha values.
+
+`differences_in_gene_ranking.ipynb` Differences between rankings of different alpha values.
+
+`differences_in_gene_ranking_same_alpha.ipynb` Differences between rankings of same alpha values.
+
+`differences_in_gene_table.ipynb` Differences between rankings of different alpha values, in a table.
+
+`gene_checker.ipynb` Check if some certain genes appear in the rankings.
+
+`network_selection.ipynb` Analyse different input networks with genes overlap.
+
+`probabilistic_network_aggr_vs_non_aggr.ipynb` Comparison between aggr. and non-aggr networks.
+
+`probabilistic_network_aggr_vs_non_aggr_overlapping_genes.ipynb` Comparison between aggr. and non-aggr networks, using gene overlap.
+
+`threshold_distribution.ipynb` Evaluation of threshold distribution in a OMEN's run.
+
+`MutationFreq` Mutation frequency data, plots and scripts. 
