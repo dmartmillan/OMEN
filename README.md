@@ -87,13 +87,13 @@ To visualize network: `subnetwork.html`, `gonetic.js`, `gonetic_aggr_vs_non_aggr
 
 Auxiliar scripts to make plots and analyze the OMEN's output. 
 
-`alpha_links.ipynb` Quantification of different link types in different alpha values.
+`alpha_links.ipynb` Quantification of different link types for different alpha values.
 
 `alpha_vs_ranking_most_mutated_genes.ipynb` Alpha vs Ranking of the most mutated genes.
 
 `clustering_plot.ipynb` Gene heatmap in different clusters. 
 
-`compare_rankings.ipynb` Comparison of ranking with Venn diagram, Spearman, Overlap genes and Non-overlap genes, in different alpha values.
+`compare_rankings.ipynb` Comparison of ranking with Venn diagram, Spearman, Overlap genes and Non-overlap genes, for different alpha values.
 
 `compare_rankings_same_alpha.ipynb` Comparison of ranking with Venn diagram, with the same alpha values.
 
