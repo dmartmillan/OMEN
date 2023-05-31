@@ -63,7 +63,7 @@ Data files and scripts for parsing input data, visualizing and analyzing.
 
 ### ***new_data* folder**
 
-Auxiliar scrits to read and parse new data.
+Auxiliar scripts to read and parse new data.
 
 `network.ipynb` Create network.pl from Network data.
 
